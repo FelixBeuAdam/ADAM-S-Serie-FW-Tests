@@ -25,6 +25,25 @@ REF_DATA_PATH = os.path.join(FILE_PATH, 'Reference Data')
 AP_SEQ_FREQUENCY_RESPONSE_XLR = os.path.join(FILE_PATH, 'AP Sequences\\Frequency_Response_XLR.approjx')
 
 
+def save_freq_res(data: np.ndarray, ref_data: np.ndarray, fig_path: str, title='Frequency Response'):
+    """
+
+    :param fig_path:
+    :param data:
+    :param ref_data:
+    :param title:
+    :param fig_name:
+    """
+    plt.semilogx(ref_data[:, 0], ref_data[:, 1], label='Reference')
+    plt.semilogx(data[:, 0], data[:, 1], '-.', label='Measured')
+    plt.xlabel('Frequency [Hz]')
+    plt.ylabel('RMS Level [dBFS]')
+    plt.title(title)
+    plt.legend()
+    plt.grid()
+    plt.savefig(fig_path)
+
+
 def load_csv(file_path: str, file_name: str):
     """
     Load .csv file and return it as a numpy array.
@@ -63,8 +82,8 @@ def get_freq_res_xlr(project: str):
     return data
 
 
-def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float, end_frequency: float, tolerance: float,
-                 plot_pass=False):
+def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float, end_frequency: float,
+                 tolerance: float):
     """
     Compares the arrays of data and ref_data. Returns True, if the difference between the values in the second column
     are within the tolerance. Returns False if not and prints a graph with the data and upper/lower data limits as well
@@ -86,23 +105,19 @@ def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float,
         :param start_frequency:
         :param ref_data:
         :param data:
-        :param plot_pass:
     """
-    idx_L = np.where(ref_data[:, 0] >= start_frequency)
-    idx_H = np.where(ref_data[:, 0] >= end_frequency)
+    idx_L = np.where(ref_data[:, 0] >= start_frequency)[0][0]
+    idx_H = np.where(ref_data[:, 0] >= end_frequency)[0][0]
 
-    data = data[idx_L:idx_H]
-    ref_data = ref_data[idx_L:idx_H]
+    data = data[idx_L:idx_H, :]
+    ref_data = ref_data[idx_L:idx_H, :]
+
     # Check if frequency vectors are equal:
-    assert np.array_equal(data[:, 0], ref_data[:, 0]), "Different input shapes"
+    assert data[:, 0].shape[0] == ref_data[:, 0].shape[0], 'Different input shapes'
 
-    abs_error = np.abs(ref_data - data)
+    abs_error = np.abs(ref_data[:, 1] - data[:, 1])
 
-    if abs_error <= tolerance:
-        plt.semilogx(sample_data[:, 0], sample_data[:, 1])
-        plt.xlabel('Frequency [Hz]')
-        plt.ylabel('RMS Level [dBFS]')
-        plt.grid()
-        plt.show()
+    if np.max(abs_error) <= tolerance:
         return True
-
+    else:
+        return False

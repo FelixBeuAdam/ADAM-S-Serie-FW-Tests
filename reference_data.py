@@ -46,13 +46,22 @@ def measure_freq_res_xlr(path: str, channel: str):
 
 
 if __name__ == "__main__":
+    # Measure frequency response
     MODEL = 'S2V'
     CHANNEL = 'WF'
     file_path = os.path.join(REF_DATA_PATH, MODEL)
     measure_freq_res_xlr(file_path, CHANNEL)
-    file_name = 'Ref_Freq_Res_' + CHANNEL + '_dBFS.csv'
-    sample_data = helpers.load_csv(file_path, file_name)
 
-    plt.semilogx(sample_data[:, 0], sample_data[:, 1])
-    plt.grid()
-    plt.show()
+    # Verify Measured Data
+    file_name = 'Ref_Freq_Res_' + CHANNEL + '_dBFS.csv'
+    reference_data = helpers.load_csv(file_path, file_name)
+    measured_data = helpers.get_freq_res_xlr(AP_SEQ_FREQUENCY_RESPONSE_XLR)
+
+    assert (
+        helpers.check_limits(data=measured_data, ref_data=reference_data,
+                             start_frequency=10, end_frequency=10_000,
+                             tolerance=0.1, plot_pass=True)
+    ), 'Measured frequency response is not within the specified tolerance'
+
+
+
