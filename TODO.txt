@@ -1,0 +1,1 @@
+1. Add CH2, CH3 in get_freq_res_xlr for simultaneous TW and MR measurement.
