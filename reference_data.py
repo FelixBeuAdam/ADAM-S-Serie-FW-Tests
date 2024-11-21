@@ -52,7 +52,6 @@ def measure_freq_res_xlr(path: str, channel: str):
 if __name__ == "__main__":
     # Measure frequency response
     MODEL = 'S2V'
-    CHANNEL = 'TW'
+    CHANNEL = 'WF'
     file_path = os.path.join(REF_DATA_PATH, MODEL)
     measure_freq_res_xlr(file_path, CHANNEL)
-

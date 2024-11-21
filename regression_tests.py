@@ -146,4 +146,3 @@ def test_delay_tw():
                 f.write('%s:%s\n' % (key, value))
 
     assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
-

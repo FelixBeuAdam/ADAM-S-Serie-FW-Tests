@@ -32,7 +32,6 @@ def save_freq_res(data: np.ndarray, ref_data: np.ndarray, fig_path: str, title='
     :param data:
     :param ref_data:
     :param title:
-    :param fig_name:
     """
     plt.semilogx(ref_data[:, 0], ref_data[:, 1], label='Reference')
     plt.semilogx(data[:, 0], data[:, 1], '-.', label='Measured')
@@ -84,8 +83,7 @@ def get_freq_res_xlr(project: str):
     return data
 
 
-def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float, end_frequency: float,
-                 tolerance: float):
+def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float, end_frequency: float, tolerance: float):
     """
     Compares the arrays of data and ref_data. Returns True, if the difference between the values in the second column
     are within the tolerance. Returns False if not and prints a graph with the data and upper/lower data limits as well
@@ -123,4 +121,3 @@ def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float,
         return True
     else:
         return False
-
