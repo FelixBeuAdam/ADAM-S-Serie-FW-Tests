@@ -72,10 +72,12 @@ def get_freq_res_xlr(project: str):
     # Run APx file
     APx.Sequence.Run()
 
-    x_values = APx.Sequence[0]["Continuous Sweep"].SequenceResults["RMS Level"].GetXValues(
+    x_values = APx.Sequence[0]['Acoustic Response'].SequenceResults['RMS Level'].GetXValues(
         InputChannelIndex.Ch1, VerticalAxis.Left, SourceDataType.Measured, 1)
-    y_values = APx.Sequence[0]["Continuous Sweep"].SequenceResults["RMS Level"].GetYValues(
+    y_values = APx.Sequence[0]['Acoustic Response'].SequenceResults['RMS Level'].GetYValues(
         InputChannelIndex.Ch1, VerticalAxis.Left, SourceDataType.Measured, 1)
+
+    ch_delay = APx.Sequence[0]['Acoustic Response'].SequenceResults['Delay'].GetMeterValues()[InputChannelIndex.Ch1]
 
     data = np.array([x_values, y_values]).T
 
@@ -121,3 +123,4 @@ def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float,
         return True
     else:
         return False
+
