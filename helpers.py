@@ -54,9 +54,7 @@ def load_csv(file_path: str, file_name: str):
     with open(file) as f:
         data = list(csv.reader(f, delimiter=";"))
 
-    data = (np.array(data[4:])).astype(float)
-
-    return data
+    return np.array(data)
 
 
 def get_freq_res_xlr(project: str):
@@ -77,9 +75,11 @@ def get_freq_res_xlr(project: str):
     y_values = APx.Sequence[0]['Acoustic Response'].SequenceResults['RMS Level'].GetYValues(
         InputChannelIndex.Ch1, VerticalAxis.Left, SourceDataType.Measured, 1)
 
-    ch_delay = APx.Sequence[0]['Acoustic Response'].SequenceResults['Delay'].GetMeterValues()[InputChannelIndex.Ch1]
+    ch_delay = APx.Sequence[0]['Acoustic Response'].SequenceResults['Delay'].GetMeterValues()[0]
 
-    data = np.array([x_values, y_values]).T
+    rms_level = np.array([x_values, y_values]).T
+
+    data = {'rms_level': rms_level, 'channel_delay': ch_delay}
 
     return data
 
