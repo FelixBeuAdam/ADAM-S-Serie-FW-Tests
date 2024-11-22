@@ -94,12 +94,12 @@ def test_delay_wf():
     reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
 
-    meas_ref_ratio = measured_data['channel_delay'] / reference_data[0]
+    meas_ref_ratio = measured_data['channel_delay'][0] / reference_data[0]
     deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
     tolerance = 5  # Tolerance in percentage
 
     woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
-                    'Measured Delay': ' ' + str(measured_data['channel_delay']) + ' s',
+                    'Measured Delay': ' ' + str(measured_data['channel_delay'][0]) + ' s',
                     'Tolerance': ' ' + str(tolerance) + ' %',
                     'Deviation': ' ' + str(deviation) + ' %'}
 
@@ -127,12 +127,12 @@ def test_delay_tw():
     reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
 
-    meas_ref_ratio = measured_data['channel_delay'] / reference_data[0]
+    meas_ref_ratio = measured_data['channel_delay'][1] / reference_data[0]
     deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
-    tolerance = 10  # Tolerance in percentage
+    tolerance = 5  # Tolerance in percentage
 
     woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
-                    'Measured Delay': ' ' + str(measured_data['channel_delay']) + ' s',
+                    'Measured Delay': ' ' + str(measured_data['channel_delay'][1]) + ' s',
                     'Tolerance': ' ' + str(tolerance) + ' %',
                     'Deviation': ' ' + str(deviation) + ' %'}
 

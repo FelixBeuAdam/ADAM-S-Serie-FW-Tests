@@ -75,7 +75,7 @@ def get_freq_res_xlr(project: str, channel:  list[str]):
     y_values = APx.Sequence[0]['Acoustic Response'].SequenceResults['RMS Level'].GetYValues(
         channel, VerticalAxis.Left, SourceDataType.Measured, 1)
 
-    ch_delay = APx.Sequence[0]['Acoustic Response'].SequenceResults['Delay'].GetMeterValues()[0]
+    ch_delay = np.array(APx.Sequence[0]['Acoustic Response'].SequenceResults['Delay'].GetMeterValues())
 
     rms_level = np.array([x_values, y_values]).T
 

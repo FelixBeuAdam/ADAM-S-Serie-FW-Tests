@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/S Control Installers/ADAM Audio S Control Installer.dmg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/S Control Installers/ADAM Audio S Control Installer.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_TW_ms.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_TW_ms.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_WF_ms.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_WF_ms.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_TW_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_TW_dBFS.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_WF_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_WF_dBFS.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Fail/AS-88_Delay_TW_FAIL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_WF_PASS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_WF_PASS.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,5 +170,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="tests">
+        <watch expression="measured_data" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
