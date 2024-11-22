@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_UNR_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_UNR_WF_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_PASS.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +48,8 @@
     "Python tests.Python tests for regression_tests.test_frequency_response_pure_tw.executor": "Run",
     "Python tests.Python tests for regression_tests.test_frequency_response_pure_wf.executor": "Run",
     "Python tests.Python tests for regression_tests.test_frequency_response_tw.executor": "Run",
+    "Python tests.Python tests for regression_tests.test_frequency_response_unr_tw.executor": "Run",
+    "Python tests.Python tests for regression_tests.test_frequency_response_unr_wf.executor": "Run",
     "Python tests.Python tests for regression_tests.test_frequency_response_wf.executor": "Run",
     "Python.AFT-533.executor": "Run",
     "Python.reference_data.executor": "Run",
@@ -52,29 +59,7 @@
     "last_opened_file_path": "C:/Users/ADAMQA/GitHub/ADAM-S-Serie-FW-Regression-Tests"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for regression_tests.test_delay_pure_tw">
-    <configuration name="reference_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="S-Serie-FW-Tests" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reference_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for regression_tests.test_frequency_response_pure_tw">
     <configuration name="Python tests for regression_tests.test_delay_pure_tw" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="S-Serie-FW-Tests" />
       <option name="ENV_FILES" value="" />
@@ -87,21 +72,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;regression_tests.test_delay_pure_tw&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for regression_tests.test_delay_pure_wf" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="S-Serie-FW-Tests" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;regression_tests.test_delay_pure_wf&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -135,13 +105,43 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for regression_tests.test_frequency_response_unr_tw" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="S-Serie-FW-Tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;regression_tests.test_frequency_response_unr_tw&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for regression_tests.test_frequency_response_unr_wf" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="S-Serie-FW-Tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;regression_tests.test_frequency_response_unr_wf&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for regression_tests.test_delay_pure_tw" />
-        <item itemvalue="Python tests.Python tests for regression_tests.test_delay_pure_wf" />
         <item itemvalue="Python tests.Python tests for regression_tests.test_frequency_response_pure_tw" />
         <item itemvalue="Python tests.Python tests for regression_tests.test_frequency_response_pure_wf" />
-        <item itemvalue="Python.reference_data" />
+        <item itemvalue="Python tests.Python tests for regression_tests.test_frequency_response_unr_tw" />
+        <item itemvalue="Python tests.Python tests for regression_tests.test_frequency_response_unr_wf" />
+        <item itemvalue="Python tests.Python tests for regression_tests.test_delay_pure_tw" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +170,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/helpers.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
         <watch expression="measured_data" />

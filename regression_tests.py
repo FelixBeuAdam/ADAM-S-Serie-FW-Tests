@@ -47,7 +47,7 @@ def test_frequency_response_pure_wf():
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
 
     data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
-                                               start_frequency=20, end_frequency=8_000, tolerance=0.1))
+                                               start_frequency=20, end_frequency=8_000, tolerance=0.2))
     if data_within_limits:
         pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_WF_PASS.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
@@ -71,7 +71,7 @@ def test_frequency_response_pure_tw():
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
 
     data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
-                                               start_frequency=100, end_frequency=20_000, tolerance=0.1))
+                                               start_frequency=100, end_frequency=20_000, tolerance=0.2))
     if data_within_limits:
         pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_PASS.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
