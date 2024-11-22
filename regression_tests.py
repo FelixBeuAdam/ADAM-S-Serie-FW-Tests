@@ -51,11 +51,11 @@ def test_frequency_response_pure_wf():
     if data_within_limits:
         pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_WF_PASS.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
-                              title='AS-87: Frequency Response Pure - Woofer Channel')
+                              title='AS-87: Frequency Response PURE - Woofer Channel')
     else:
         fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_WF_FAIL.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
-                              title='AS-87: Frequency Response Pure - Woofer Channel')
+                              title='AS-87: Frequency Response PURE - Woofer Channel')
 
     assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
@@ -75,11 +75,11 @@ def test_frequency_response_pure_tw():
     if data_within_limits:
         pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_PASS.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
-                              title='AS-87: Frequency Response Pure - Tweeter Channel')
+                              title='AS-87: Frequency Response PURE - Tweeter Channel')
     else:
         fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_TW_FAIL.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
-                              title='AS-87: Frequency Response Pure - Tweeter Channel')
+                              title='AS-87: Frequency Response PURE - Tweeter Channel')
 
     assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
@@ -148,3 +148,51 @@ def test_delay_pure_tw():
                 f.write('%s:%s\n' % (key, value))
 
     assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
+
+
+def test_frequency_response_unr_wf():
+    """
+        AS-87 Frequency Response Pure
+        :return:
+    """
+    CHANNEL = 'WF'
+    file_name = 'Ref_Freq_Res_UNR_' + CHANNEL + '_dBFS.csv'
+    reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
+
+    data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                               start_frequency=20, end_frequency=8_000, tolerance=0.1))
+    if data_within_limits:
+        pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_UNR_WF_PASS.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                              title='AS-87: Frequency Response UNR - Woofer Channel')
+    else:
+        fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_UNR_WF_FAIL.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                              title='AS-87: Frequency Response UNR - Woofer Channel')
+
+    assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+
+def test_frequency_response_unr_tw():
+    """
+    AS-87 Frequency Response Pure
+    :return:
+    """
+    CHANNEL = 'TW'
+    file_name = 'Ref_Freq_Res_UNR_' + CHANNEL + '_dBFS.csv'
+    reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+
+    data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                               start_frequency=100, end_frequency=20_000, tolerance=0.1))
+    if data_within_limits:
+        pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_UNR_TW_PASS.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                              title='AS-87: Frequency Response UNR - Tweeter Channel')
+    else:
+        fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_UNR_TW_FAIL.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                              title='AS-87: Frequency Response UNR - Tweeter Channel')
+
+    assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
