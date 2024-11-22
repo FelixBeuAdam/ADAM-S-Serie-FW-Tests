@@ -90,7 +90,7 @@ def test_delay_pure_wf():
     :return:
     """
     CHANNEL = 'WF'
-    file_name = 'Ref_Delay_PURE_' + CHANNEL + '_ms.csv'
+    file_name = 'Ref_Delay_PURE_' + CHANNEL + '_s.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
 
@@ -117,13 +117,13 @@ def test_delay_pure_wf():
     assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
 
 
-def test_delay_tw():
+def test_delay_pure_tw():
     """
     AS-88 Tweeter Channel Delay Test
     :return:
     """
     CHANNEL = 'TW'
-    file_name = 'Ref_Delay_PURE_' + CHANNEL + '_ms.csv'
+    file_name = 'Ref_Delay_PURE_' + CHANNEL + '_s.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
 
