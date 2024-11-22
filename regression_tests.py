@@ -137,7 +137,7 @@ def test_delay_pure_tw():
                     'Deviation': ' ' + str(deviation) + ' %'}
 
     if deviation <= tolerance:
-        pass_txt_name = PASS_PATH + 'AS-88_Delay_Pure_' + CHANNEL + '_PASS.txt'
+        pass_txt_name = PASS_PATH + 'AS-88_Delay_PURE_' + CHANNEL + '_PASS.txt'
         with open(pass_txt_name, 'w') as f:
             for key, value in woofer_delay.items():
                 f.write('%s:%s\n' % (key, value))
