@@ -27,12 +27,13 @@ REF_DATA_PATH = os.path.join(FILE_PATH, 'Reference Data')
 AP_SEQ_FREQUENCY_RESPONSE_XLR = os.path.join(FILE_PATH, 'AP Sequences\\Frequency_Response_XLR.approjx')
 
 # Channel Index
-CH_IDX = [InputChannelIndex.Ch1, InputChannelIndex.Ch2]
+CH_IDX = [InputChannelIndex.Ch1, InputChannelIndex.Ch2, InputChannelIndex.Ch3]
 
 
-def measure_freq_res_xlr(path: str, channel:  list[str]):
+def measure_freq_res_xlr(path: str, channel: list[str], preset: str):
     """
 
+    :param preset:
     :param channel:
     :type path: object
     """
@@ -44,8 +45,8 @@ def measure_freq_res_xlr(path: str, channel:  list[str]):
     APx.Sequence.Run()
     # Save curve to file
     for i in range(len(channel)):
-        name = 'Ref_Freq_Res_' + channel[i] + '_dBFS.csv'
-        delay_name = 'Ref_Delay_' + channel[i] + '_ms.csv'
+        name = 'Ref_Freq_Res_' + preset + '_' + channel[i] + '_dBFS.csv'
+        delay_name = 'Ref_Delay_' + preset + '_' + channel[i] + '_s.csv'
         file = os.path.join(path, name)
         delay_file = os.path.join(path, delay_name)
         x_values = APx.Sequence[0]['Acoustic Response'].SequenceResults['RMS Level'].GetXValues(
@@ -61,8 +62,16 @@ def measure_freq_res_xlr(path: str, channel:  list[str]):
 
 
 if __name__ == "__main__":
-    # Measure frequency response
-    MODEL = 'S2V'
-    CHANNEL = ['WF', 'TW']
+    s_serie_models = ['S2V', 'S3V', 'S3H', 'S5V', 'S5H']
+    s_serie_presets = ['PURE', 'UNR', 'USER 1', 'USER 2', 'USER 3', 'USER 4', 'USER 5']
+
+    MODEL = input('Enter the DUT model: ')
+    assert MODEL in s_serie_models, 'Unrecognized S-Serie model'
+    PRESET = input('Enter the DUT preset: ')
+    assert PRESET in s_serie_presets, 'Unrecognized S-Serie preset'
+
+    CHANNELS = {'S2V': ['WF', 'TW'], 'S3V': ['WF', 'TW', 'MR'], 'S3H': ['WF', 'TW', 'MR'],
+                'S5V': ['WF', 'TW', 'MR'], 'S5H': ['WF', 'TW', 'MR']}
+
     file_path = os.path.join(REF_DATA_PATH, MODEL)
-    measure_freq_res_xlr(file_path, CHANNEL)
+    measure_freq_res_xlr(file_path, CHANNELS[MODEL], PRESET)

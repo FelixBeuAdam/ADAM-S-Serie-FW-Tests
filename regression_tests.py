@@ -32,7 +32,7 @@ FILE_PATH = os.path.join(REF_DATA_PATH, MODEL)
 PASS_PATH = os.path.join(LOG_PATH, MODEL) + '\\Pass\\'
 FAIL_PATH = os.path.join(LOG_PATH, MODEL) + '\\Fail\\'
 
-CH_IDX = [InputChannelIndex.Ch1, InputChannelIndex.Ch2]
+CH_IDX = [InputChannelIndex.Ch1, InputChannelIndex.Ch2, InputChannelIndex.Ch3]
 
 
 # @pytest.mark.xray('AS-87')
