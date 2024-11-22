@@ -56,10 +56,11 @@ def load_csv(file_path: str, file_name: str):
     return np.array(data)
 
 
-def get_freq_res_xlr(project: str):
+def get_freq_res_xlr(project: str, channel:  list[str]):
     """
     Measure the frequency response of the DUT and return as a np.ndarray.
 
+    :param channel:
     :param project:
     """
     # Initialize APx
@@ -70,9 +71,9 @@ def get_freq_res_xlr(project: str):
     APx.Sequence.Run()
 
     x_values = APx.Sequence[0]['Acoustic Response'].SequenceResults['RMS Level'].GetXValues(
-        InputChannelIndex.Ch1, VerticalAxis.Left, SourceDataType.Measured, 1)
+        channel, VerticalAxis.Left, SourceDataType.Measured, 1)
     y_values = APx.Sequence[0]['Acoustic Response'].SequenceResults['RMS Level'].GetYValues(
-        InputChannelIndex.Ch1, VerticalAxis.Left, SourceDataType.Measured, 1)
+        channel, VerticalAxis.Left, SourceDataType.Measured, 1)
 
     ch_delay = APx.Sequence[0]['Acoustic Response'].SequenceResults['Delay'].GetMeterValues()[0]
 

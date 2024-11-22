@@ -32,6 +32,8 @@ FILE_PATH = os.path.join(REF_DATA_PATH, MODEL)
 PASS_PATH = os.path.join(LOG_PATH, MODEL) + '\\Pass\\'
 FAIL_PATH = os.path.join(LOG_PATH, MODEL) + '\\Fail\\'
 
+CH_IDX = [InputChannelIndex.Ch1, InputChannelIndex.Ch2]
+
 
 # @pytest.mark.xray('AS-87')
 def test_frequency_response_pure_wf():
@@ -42,7 +44,7 @@ def test_frequency_response_pure_wf():
     CHANNEL = 'WF'
     file_name = 'Ref_Freq_Res_' + CHANNEL + '_dBFS.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
-    measured_data = helpers.get_freq_res_xlr(AP_SEQ_FREQUENCY_RESPONSE_XLR)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
 
     data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
                                                start_frequency=20, end_frequency=8_000, tolerance=0.1))
@@ -66,7 +68,7 @@ def test_frequency_response_pure_tw():
     CHANNEL = 'TW'
     file_name = 'Ref_Freq_Res_' + CHANNEL + '_dBFS.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
-    measured_data = helpers.get_freq_res_xlr(AP_SEQ_FREQUENCY_RESPONSE_XLR)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
 
     data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
                                                start_frequency=100, end_frequency=20_000, tolerance=0.1))
@@ -90,7 +92,7 @@ def test_delay_wf():
     CHANNEL = 'WF'
     file_name = 'Ref_Delay_' + CHANNEL + '_ms.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
-    measured_data = helpers.get_freq_res_xlr(AP_SEQ_FREQUENCY_RESPONSE_XLR)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
 
     meas_ref_ratio = measured_data['channel_delay'] / reference_data[0]
     deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
@@ -123,7 +125,7 @@ def test_delay_tw():
     CHANNEL = 'TW'
     file_name = 'Ref_Delay_' + CHANNEL + '_ms.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
-    measured_data = helpers.get_freq_res_xlr(AP_SEQ_FREQUENCY_RESPONSE_XLR)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
 
     meas_ref_ratio = measured_data['channel_delay'] / reference_data[0]
     deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
