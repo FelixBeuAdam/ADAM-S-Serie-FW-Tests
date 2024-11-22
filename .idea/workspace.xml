@@ -7,12 +7,10 @@
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" beforeDir="false" afterPath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_TW_ms.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_WF_ms.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_TW_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_WF_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_TW_PASS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_WF_PASS.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

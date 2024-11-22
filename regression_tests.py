@@ -42,18 +42,18 @@ def test_frequency_response_pure_wf():
         :return:
     """
     CHANNEL = 'WF'
-    file_name = 'Ref_Freq_Res_' + CHANNEL + '_dBFS.csv'
+    file_name = 'Ref_Freq_Res_PURE_' + CHANNEL + '_dBFS.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
 
     data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
                                                start_frequency=20, end_frequency=8_000, tolerance=0.1))
     if data_within_limits:
-        pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_WF_PASS.png'
+        pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_WF_PASS.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
                               title='AS-87: Frequency Response Pure - Woofer Channel')
     else:
-        fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_WF_FAIL.png'
+        fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_WF_FAIL.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
                               title='AS-87: Frequency Response Pure - Woofer Channel')
 
@@ -66,31 +66,31 @@ def test_frequency_response_pure_tw():
     :return:
     """
     CHANNEL = 'TW'
-    file_name = 'Ref_Freq_Res_' + CHANNEL + '_dBFS.csv'
+    file_name = 'Ref_Freq_Res_PURE_' + CHANNEL + '_dBFS.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
 
     data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
                                                start_frequency=100, end_frequency=20_000, tolerance=0.1))
     if data_within_limits:
-        pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_TW_PASS.png'
+        pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_PASS.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
                               title='AS-87: Frequency Response Pure - Tweeter Channel')
     else:
-        fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_TW_FAIL.png'
+        fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_TW_FAIL.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
                               title='AS-87: Frequency Response Pure - Tweeter Channel')
 
     assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
 
-def test_delay_wf():
+def test_delay_pure_wf():
     """
     AS-88 Woofer Channel Delay Test
     :return:
     """
     CHANNEL = 'WF'
-    file_name = 'Ref_Delay_' + CHANNEL + '_ms.csv'
+    file_name = 'Ref_Delay_PURE_' + CHANNEL + '_ms.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
 
@@ -104,12 +104,12 @@ def test_delay_wf():
                     'Deviation': ' ' + str(deviation) + ' %'}
 
     if deviation <= tolerance:
-        pass_txt_name = PASS_PATH + 'AS-88_Delay_WF_PASS.txt'
+        pass_txt_name = PASS_PATH + 'AS-88_Delay_PURE_' + CHANNEL + '_PASS.txt'
         with open(pass_txt_name, 'w') as f:
             for key, value in woofer_delay.items():
                 f.write('%s:%s\n' % (key, value))
     else:
-        fail_txt_name = FAIL_PATH + 'AS-88_Delay_WF_FAIL.txt'
+        fail_txt_name = FAIL_PATH + 'AS-88_Delay_PURE_' + CHANNEL + '_FAIL.txt'
         with open(fail_txt_name, 'w') as f:
             for key, value in woofer_delay.items():
                 f.write('%s:%s\n' % (key, value))
@@ -123,7 +123,7 @@ def test_delay_tw():
     :return:
     """
     CHANNEL = 'TW'
-    file_name = 'Ref_Delay_' + CHANNEL + '_ms.csv'
+    file_name = 'Ref_Delay_PURE_' + CHANNEL + '_ms.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
 
@@ -137,12 +137,12 @@ def test_delay_tw():
                     'Deviation': ' ' + str(deviation) + ' %'}
 
     if deviation <= tolerance:
-        pass_txt_name = PASS_PATH + 'AS-88_Delay_' + CHANNEL + '_PASS.txt'
+        pass_txt_name = PASS_PATH + 'AS-88_Delay_Pure_' + CHANNEL + '_PASS.txt'
         with open(pass_txt_name, 'w') as f:
             for key, value in woofer_delay.items():
                 f.write('%s:%s\n' % (key, value))
     else:
-        fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + CHANNEL + '_FAIL.txt'
+        fail_txt_name = FAIL_PATH + 'AS-88_Delay_PURE_' + CHANNEL + '_FAIL.txt'
         with open(fail_txt_name, 'w') as f:
             for key, value in woofer_delay.items():
                 f.write('%s:%s\n' % (key, value))
