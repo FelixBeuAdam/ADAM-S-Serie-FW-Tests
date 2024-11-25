@@ -87,6 +87,26 @@ def measure_delay_xlr(path: str, channel: list[str], preset: str):
         delay.tofile(delay_file, sep=';')
 
 
+def random_eq_settings(eq_slots: int):
+    """
+
+    :param eq_slots:
+    :return:
+    """
+    eq_settings = []
+
+    for idx in range(eq_slots):
+        if idx < eq_slots // 2:
+            eq = str(np.random.randint(20, 3_000))
+        else:
+            eq = str(np.random.randint(3_000, 20_000))
+        q = str(np.round(np.random.uniform(0.1, 20), 1))
+        db = str(np.round(np.random.uniform(-12, 12), 1))
+        eq_settings.append({'EQ': eq, 'Q': q, 'dB': db})
+
+    return eq_settings
+
+
 if __name__ == "__main__":
     model = input('Please enter the DUT model: ')
     assert model in S_SERIE_MODELS, 'Unrecognized S-Serie model'
