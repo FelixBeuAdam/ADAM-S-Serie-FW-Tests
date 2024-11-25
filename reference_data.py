@@ -36,6 +36,7 @@ CHANNELS = {'S2V': ['WF', 'TW'], 'S3V': ['WF', 'TW', 'MR'], 'S3H': ['WF', 'TW', 
 SHELVING_FILTERS = ['-12', '-6', '+6', '+12']
 SHELVING_CUTOFF = ['400', '5000']
 CH_DELAYS = ['0', '2.5', '5']
+VOLUME = ['-60', '-12', '-6', '0', '+6', '+12']
 
 
 def measure_freq_res_xlr(path: str, channel: list[str], preset: str):
@@ -87,21 +88,27 @@ def measure_delay_xlr(path: str, channel: list[str], preset: str):
 
 
 if __name__ == "__main__":
-    model = input('Enter the DUT model: ')
+    model = input('Please enter the DUT model: ')
     assert model in S_SERIE_MODELS, 'Unrecognized S-Serie model'
 
     file_path = os.path.join(REF_DATA_PATH, model)
 
-    ref_meas = input('Would you like to proceed with the frequency response reference measurement [y/n]: ')
+    ref_meas = input('Would you like to proceed with the frequency response reference measurements [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
     if ref_meas == 'y':
         print('Please set the DUT preset to PURE')
         user_preset = input('Please confirm the current DUT preset: ')
-        assert user_preset != 'PURE', 'Current user preset is not set to PURE'
-        measure_freq_res_xlr(file_path, CHANNELS[model], user_preset)
+        assert user_preset == 'PURE', 'Current user preset is not set to PURE'
+        for i in range(len(VOLUME)):
+            print('Please set the DUT volume to ' + VOLUME[i] + ' dB')
+            proceed_meas = input('Confirm measurement [y/n]: ')
+            if proceed_meas == 'y':
+                volume_preset = user_preset + '_' + VOLUME[i] + 'dB'
+                measure_freq_res_xlr(file_path, CHANNELS[model], volume_preset)
+        print('Please set the DUT volume to 0 dB')
         print('Please set the DUT preset to UNR')
         user_preset = input('Please confirm the current DUT preset: ')
-        assert user_preset != 'UNR', 'Current user preset is not set to UNR'
+        assert user_preset == 'UNR', 'Current user preset is not set to UNR'
         measure_freq_res_xlr(file_path, CHANNELS[model], user_preset)
 
     ref_meas = input('Would you like to proceed with the DUT shelving filter reference measurements [y/n]: ')
@@ -115,7 +122,7 @@ if __name__ == "__main__":
         print('Please set the DUT Lo-Shelf cutoff frequency to ' + SHELVING_CUTOFF[0] + ' Hz')
         print('Please set the DUT Hi-Shelf cutoff frequency to ' + SHELVING_CUTOFF[1] + ' Hz')
         for i in range(len(SHELVING_FILTERS)):
-            print('Please set the DUT Lo-Shelf and Hi-Shelf to ' + SHELVING_FILTERS[i] + ' dB')
+            print('Please set the DUT Lo-Shelf and Hi-Shelf gain to ' + SHELVING_FILTERS[i] + ' dB')
             proceed_meas = input('Confirm measurement [y/n]: ')
             if proceed_meas == 'y':
                 shelving_preset = user_preset + '_' + SHELVING_FILTERS[i] + 'dB'
