@@ -6,23 +6,35 @@
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" beforeDir="false" afterPath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_UNR_TW_PASS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_UNR_WF_PASS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_PURE_TW_PASS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_PURE_WF_PASS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_TW_s.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_TW_s.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_WF_s.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_WF_s.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_UNR_TW_s.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_UNR_TW_s.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_UNR_WF_s.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_UNR_WF_s.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_TW_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_TW_dBFS.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_WF_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_WF_dBFS.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_TW_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_TW_dBFS.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_WF_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_WF_dBFS.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_TW_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_WF_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_UNR_TW_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_UNR_WF_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_+12dB_TW_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_+12dB_WF_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_+6dB_TW_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_+6dB_WF_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_-12dB_TW_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_-12dB_WF_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_-6dB_TW_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_-6dB_WF_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_TW_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_USER_1_WF_s.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_+12dB_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_+12dB_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_+6dB_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_+6dB_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_-12dB_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_-12dB_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_-6dB_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_-6dB_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_WF_dBFS.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reference_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/regression_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +76,7 @@
     "Python tests.Python tests for regression_tests.test_frequency_response_unr_wf.executor": "Run",
     "Python tests.Python tests for regression_tests.test_frequency_response_wf.executor": "Run",
     "Python.AFT-533.executor": "Run",
-    "Python.reference_data.executor": "Run",
+    "Python.reference_data.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
