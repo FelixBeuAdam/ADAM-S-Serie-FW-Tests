@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_WF_dBFS.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reference_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference_data.py" afterDir="false" />
     </list>
@@ -48,7 +50,7 @@
     "Python tests.Python tests for regression_tests.test_frequency_response_unr_wf.executor": "Run",
     "Python tests.Python tests for regression_tests.test_frequency_response_wf.executor": "Run",
     "Python.AFT-533.executor": "Run",
-    "Python.reference_data.executor": "Debug",
+    "Python.reference_data.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
@@ -173,15 +175,6 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/helpers.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
         <watch expression="measured_data" />

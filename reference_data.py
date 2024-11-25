@@ -37,6 +37,7 @@ SHELVING_FILTERS = ['-12', '-6', '+6', '+12']
 SHELVING_CUTOFF = ['400', '5000']
 CH_DELAYS = ['0', '2.5', '5']
 VOLUME = ['-60', '-12', '-6', '0', '+6', '+12']
+CUSTOM_EQS = 6
 
 
 def measure_freq_res_xlr(path: str, channel: list[str], preset: str):
@@ -87,9 +88,10 @@ def measure_delay_xlr(path: str, channel: list[str], preset: str):
         delay.tofile(delay_file, sep=';')
 
 
-def random_eq_settings(eq_slots: int):
+def random_eq_settings(path: str, preset: str, eq_slots: int):
     """
 
+    :param path:
     :param eq_slots:
     :return:
     """
@@ -103,6 +105,13 @@ def random_eq_settings(eq_slots: int):
         q = str(np.round(np.random.uniform(0.1, 20), 1))
         db = str(np.round(np.random.uniform(-12, 12), 1))
         eq_settings.append({'EQ': eq, 'Q': q, 'dB': db})
+
+    settings_name = 'REF_Custom_EQ_' + preset + '_Settings.csv'
+    settings_file = os.path.join(path, settings_name)
+    with open(settings_file, 'w') as f:
+        writer = csv.DictWriter(f, fieldnames=['EQ', 'Q', 'dB'])
+        writer.writeheader()
+        writer.writerows(eq_settings)
 
     return eq_settings
 
@@ -133,10 +142,11 @@ if __name__ == "__main__":
 
     ref_meas = input('Would you like to proceed with the DUT shelving filter reference measurements [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
+
     if ref_meas == 'y':
-        print('Please set the DUT preset to one of the custom USER presets')
+        print('Please set the DUT preset to the custom USER 1 preset')
         user_preset = input('Please confirm the current DUT preset: ')
-        assert user_preset in S_SERIE_PRESETS, 'Unrecognized S-Serie preset'
+        assert user_preset == 'USER 1', 'Current user preset is not set to USER 1'
         if ' ' in user_preset:
             user_preset = user_preset.replace(' ', '_')
         print('Please set the DUT Lo-Shelf cutoff frequency to ' + SHELVING_CUTOFF[0] + ' Hz')
@@ -147,6 +157,25 @@ if __name__ == "__main__":
             if proceed_meas == 'y':
                 shelving_preset = user_preset + '_' + SHELVING_FILTERS[i] + 'dB'
                 measure_freq_res_xlr(file_path, CHANNELS[model], shelving_preset)
+
+    ref_meas = input('Would you like to proceed with the DUT custom EQ reference measurements [y/n]: ')
+    assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
+
+    if ref_meas == 'y':
+        print('Please set the DUT preset to the custom USER 2 preset')
+        user_preset = input('Please confirm the current DUT preset: ')
+        assert user_preset == 'USER 2', 'Current user preset is not set to USER 2'
+        if ' ' in user_preset:
+            user_preset = user_preset.replace(' ', '_')
+        custom_eqs = random_eq_settings(path=file_path, preset=user_preset, eq_slots=CUSTOM_EQS)
+        print('Please set the DUT custom EQ with the following settings: ')
+        for i in range(CUSTOM_EQS):
+            print(custom_eqs[i])
+        print('NOTE: Please choose the closest available center frequency/Q value if the firmware version does not'
+              ' support arbitrary selection.')
+        proceed_meas = input('Confirm measurement [y/n]: ')
+        if proceed_meas == 'y':
+            measure_freq_res_xlr(file_path, CHANNELS[model], user_preset)
 
     ref_meas = input('Would you like to proceed with the DUT delay reference measurements [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
