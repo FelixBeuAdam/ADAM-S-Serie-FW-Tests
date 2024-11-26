@@ -826,3 +826,55 @@ class TestVolumeControl:
                                   title='AS-XX: Frequency Response PURE @ +12 dB - Tweeter Channel')
 
         assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+
+class TestUserEQs:
+
+    # @pytest.mark.xray('AS-XX')
+    def test_user_eqs_wf(self):
+        """
+            AS-XX Frequency Response Pure
+            :return:
+        """
+        CHANNEL = 'WF'
+        file_name = 'Ref_Freq_Res_USER_2_' + CHANNEL + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
+
+        data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                   start_frequency=20, end_frequency=8_000, tolerance=0.2))
+        if data_within_limits:
+            pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_USER_EQ_WF_PASS.png'
+            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                  title='AS-XX: Frequency Response Custom User EQ - Woofer Channel')
+        else:
+            fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_USER_EQ_WF_FAIL.png'
+            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                  title='AS-87: Frequency Response Custom User EQ - Woofer Channel')
+
+        assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+    # @pytest.mark.xray('AS-87')
+    def test_user_eqs_tw(self):
+        """
+        AS-XX Frequency Response Pure
+        :return:
+        """
+        CHANNEL = 'TW'
+        file_name = 'Ref_Freq_Res_USER_2_' + CHANNEL + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+
+        data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                   start_frequency=100, end_frequency=20_000, tolerance=0.2))
+        if data_within_limits:
+            pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_USER_EQ_TW_PASS.png'
+            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                  title='AS-XX: Frequency Response Custom User EQ - Tweeter Channel')
+        else:
+            fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_USER_EQ_TW_FAIL.png'
+            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                  title='AS-XX: Frequency Response Custom User EQ - Tweeter Channel')
+
+        assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+

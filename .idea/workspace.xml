@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_+12dB_WF_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_+6dB_TW_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_+6dB_WF_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_-12dB_TW_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_-12dB_WF_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_-60dB_TW_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_-60dB_WF_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_-6dB_TW_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_-6dB_WF_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_0dB_TW_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-XX_Freq_Res_PURE_0dB_WF_PASS.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +38,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests for regression_tests.TestUserEQs.test_user_eqs_tw.executor": "Run",
+    "Python tests.Python tests for regression_tests.TestUserEQs.test_user_eqs_wf.executor": "Run",
     "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_0db_tw.executor": "Run",
     "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_0db_wf.executor": "Run",
     "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_minus_12db_tw.executor": "Run",
@@ -92,8 +84,8 @@
     "last_opened_file_path": "C:/Users/ADAMQA/GitHub/ADAM-S-Serie-FW-Regression-Tests"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_12db_tw">
-    <configuration name="Python tests for regression_tests.TestVolumeControl.test_volume_control_0db_tw" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for regression_tests.TestUserEQs.test_user_eqs_tw">
+    <configuration name="Python tests for regression_tests.TestUserEQs.test_user_eqs_tw" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="S-Serie-FW-Tests" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -104,7 +96,22 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;regression_tests.TestVolumeControl.test_volume_control_0db_tw&quot;" />
+      <option name="_new_target" value="&quot;regression_tests.TestUserEQs.test_user_eqs_tw&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for regression_tests.TestUserEQs.test_user_eqs_wf" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="S-Serie-FW-Tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;regression_tests.TestUserEQs.test_user_eqs_wf&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -153,28 +160,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_6db_wf" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="S-Serie-FW-Tests" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;regression_tests.TestVolumeControl.test_volume_control_plus_6db_wf&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for regression_tests.TestUserEQs.test_user_eqs_tw" />
+        <item itemvalue="Python tests.Python tests for regression_tests.TestUserEQs.test_user_eqs_wf" />
         <item itemvalue="Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_12db_tw" />
         <item itemvalue="Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_12db_wf" />
         <item itemvalue="Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_6db_tw" />
-        <item itemvalue="Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_6db_wf" />
-        <item itemvalue="Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_0db_tw" />
       </list>
     </recent_temporary>
   </component>
