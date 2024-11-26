@@ -343,52 +343,202 @@ def test_frequency_response_unr_tw():
     assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
 
-# @pytest.mark.xray('AS-547')
-def test_shelving_filters_lo_shelf():
+# @pytest.mark.xray('AS-XX')
+def test_lo_shelf_minus_12db_wf():
     """
-        AS-87 Frequency Response Pure
+        AS-XX Frequency Response Pure
         :return:
     """
     CHANNEL = 'WF'
-    file_name = 'Ref_Freq_Res_PURE_' + CHANNEL + '_dBFS.csv'
+    file_name = 'Ref_Freq_Res_USER_1_-12dB_' + CHANNEL + '_dBFS.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
 
     data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
                                                start_frequency=20, end_frequency=8_000, tolerance=0.2))
     if data_within_limits:
-        pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_WF_PASS.png'
+        pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_Lo_Shelf_-12dB_WF_PASS.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
-                              title='AS-87: Frequency Response PURE - Woofer Channel')
+                              title='AS-XX: Frequency Response Lo-Shelf -12dB - Woofer Channel')
     else:
-        fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_WF_FAIL.png'
+        fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_Lo_Shelf_-12dB_WF_FAIL.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
-                              title='AS-87: Frequency Response PURE - Woofer Channel')
+                              title='AS-XX: Frequency Response Lo-Shelf -12dB - Woofer Channel')
 
     assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
 
-# @pytest.mark.xray('AS-547')
-def test_shelving_filters_hi_shelf():
+# @pytest.mark.xray('AS-XX')
+def test_hi_shelf_minus_12db_tw():
     """
-    AS-87 Frequency Response Pure
-    :return:
+        AS-XX Frequency Response Pure
+        :return:
     """
     CHANNEL = 'TW'
-    file_name = 'Ref_Freq_Res_PURE_' + CHANNEL + '_dBFS.csv'
+    file_name = 'Ref_Freq_Res_USER_1_-12dB_' + CHANNEL + '_dBFS.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
     measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
 
     data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
                                                start_frequency=100, end_frequency=20_000, tolerance=0.2))
     if data_within_limits:
-        pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_PASS.png'
+        pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_Hi_Shelf_-12dB_TW_PASS.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
-                              title='AS-87: Frequency Response PURE - Tweeter Channel')
+                              title='AS-XX: Frequency Response Hi-Shelf -12dB - Tweeter Channel')
     else:
-        fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_TW_FAIL.png'
+        fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_Hi_Shelf_-12dB_TW_FAIL.png'
         helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
-                              title='AS-87: Frequency Response PURE - Tweeter Channel')
+                              title='AS-XX: Frequency Response Hi-Shelf -12dB - Tweeter Channel')
+
+    assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+
+# @pytest.mark.xray('AS-XX')
+def test_lo_shelf_minus_6db_wf():
+    """
+        AS-XX Frequency Response Pure
+        :return:
+    """
+    CHANNEL = 'WF'
+    file_name = 'Ref_Freq_Res_USER_1_-6dB_' + CHANNEL + '_dBFS.csv'
+    reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
+
+    data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                               start_frequency=20, end_frequency=8_000, tolerance=0.2))
+    if data_within_limits:
+        pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_Lo_Shelf_-6dB_WF_PASS.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                              title='AS-XX: Frequency Response Lo-Shelf -6dB - Woofer Channel')
+    else:
+        fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_Lo_Shelf_-6dB_WF_FAIL.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                              title='AS-XX: Frequency Response Lo-Shelf -6dB - Woofer Channel')
+
+    assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+
+# @pytest.mark.xray('AS-XX')
+def test_hi_shelf_minus_6db_tw():
+    """
+        AS-XX Frequency Response Pure
+        :return:
+    """
+    CHANNEL = 'TW'
+    file_name = 'Ref_Freq_Res_USER_1_-6dB_' + CHANNEL + '_dBFS.csv'
+    reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+
+    data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                               start_frequency=100, end_frequency=20_000, tolerance=0.2))
+    if data_within_limits:
+        pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_Hi_Shelf_-6dB_TW_PASS.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                              title='AS-XX: Frequency Response Hi-Shelf -6dB - Tweeter Channel')
+    else:
+        fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_Hi_Shelf_-6dB_TW_FAIL.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                              title='AS-XX: Frequency Response Hi-Shelf -6dB - Tweeter Channel')
+
+    assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+
+# @pytest.mark.xray('AS-XX')
+def test_lo_shelf_plus_6db_wf():
+    """
+        AS-XX Frequency Response Pure
+        :return:
+    """
+    CHANNEL = 'WF'
+    file_name = 'Ref_Freq_Res_USER_1_+6dB_' + CHANNEL + '_dBFS.csv'
+    reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
+
+    data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                               start_frequency=20, end_frequency=8_000, tolerance=0.2))
+    if data_within_limits:
+        pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_Lo_Shelf_+6dB_WF_PASS.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                              title='AS-XX: Frequency Response Lo-Shelf +6dB - Woofer Channel')
+    else:
+        fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_Lo_Shelf_+6dB_WF_FAIL.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                              title='AS-XX: Frequency Response Lo-Shelf +6dB - Woofer Channel')
+
+    assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+
+# @pytest.mark.xray('AS-XX')
+def test_hi_shelf_plus_6db_tw():
+    """
+        AS-XX Frequency Response Pure
+        :return:
+    """
+    CHANNEL = 'TW'
+    file_name = 'Ref_Freq_Res_USER_1_+6dB_' + CHANNEL + '_dBFS.csv'
+    reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+
+    data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                               start_frequency=100, end_frequency=20_000, tolerance=0.2))
+    if data_within_limits:
+        pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_Hi_Shelf_+6dB_TW_PASS.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                              title='AS-XX: Frequency Response Hi-Shelf +6dB - Tweeter Channel')
+    else:
+        fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_Hi_Shelf_+6dB_TW_FAIL.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                              title='AS-XX: Frequency Response Hi-Shelf +6dB - Tweeter Channel')
+
+    assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+
+# @pytest.mark.xray('AS-XX')
+def test_lo_shelf_plus_12db_wf():
+    """
+        AS-XX Frequency Response Pure
+        :return:
+    """
+    CHANNEL = 'WF'
+    file_name = 'Ref_Freq_Res_USER_1_+12dB_' + CHANNEL + '_dBFS.csv'
+    reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
+
+    data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                               start_frequency=20, end_frequency=8_000, tolerance=0.2))
+    if data_within_limits:
+        pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_Lo_Shelf_+12dB_WF_PASS.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                              title='AS-XX: Frequency Response Lo-Shelf +12dB - Woofer Channel')
+    else:
+        fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_Lo_Shelf_+12dB_WF_FAIL.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                              title='AS-XX: Frequency Response Lo-Shelf +12dB - Woofer Channel')
+
+    assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+
+# @pytest.mark.xray('AS-XX')
+def test_hi_shelf_plus_12db_tw():
+    """
+        AS-XX Frequency Response Pure
+        :return:
+    """
+    CHANNEL = 'TW'
+    file_name = 'Ref_Freq_Res_USER_1_+12dB_' + CHANNEL + '_dBFS.csv'
+    reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+    measured_data = helpers.get_freq_res_xlr(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+
+    data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                               start_frequency=100, end_frequency=20_000, tolerance=0.2))
+    if data_within_limits:
+        pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_Hi_Shelf_+12dB_TW_PASS.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                              title='AS-XX: Frequency Response Hi-Shelf +12dB - Tweeter Channel')
+    else:
+        fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_Hi_Shelf_+12dB_TW_FAIL.png'
+        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                              title='AS-XX: Frequency Response Hi-Shelf +12dB - Tweeter Channel')
 
     assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
