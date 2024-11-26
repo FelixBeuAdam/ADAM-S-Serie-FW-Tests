@@ -43,6 +43,7 @@ SHELVING_CUTOFF = ['400', '5000']
 CH_DELAYS = ['0ms', '2.5ms', '5ms']
 VOLUME = ['-60dB', '-12dB', '-6dB', '0dB', '+6dB', '+12dB']
 CUSTOM_EQS = 6
+SAMPLE_RATES = [44_100, 48_000, 88_200, 96_000, 176_400, 192_000]
 
 
 class TestFrequencyResponsePURE:

@@ -25,6 +25,7 @@ from AudioPrecision.API import *
 FILE_PATH = os.path.dirname(os.path.abspath(__name__))
 REF_DATA_PATH = os.path.join(FILE_PATH, 'Reference Data')
 AP_SEQ_FREQUENCY_RESPONSE_XLR = os.path.join(FILE_PATH, 'AP Sequences\\Frequency_Response_XLR.approjx')
+AP_SEQ_FREQUENCY_RESPONSE_AES3 = os.path.join(FILE_PATH, 'AP Sequences\\Frequency_Response_AES3.approjx')
 
 # Channel Index
 CH_IDX = [InputChannelIndex.Ch1, InputChannelIndex.Ch2, InputChannelIndex.Ch3]
@@ -38,6 +39,7 @@ SHELVING_CUTOFF = ['400', '5000']
 CH_DELAYS = ['0', '2.5', '5']
 VOLUME = ['-60', '-12', '-6', '0', '+6', '+12']
 CUSTOM_EQS = 6
+SAMPLE_RATES = [44_100, 48_000, 88_200, 96_000, 176_400, 192_000]
 
 
 def measure_freq_res_xlr(path: str, channel: list[str], preset: str):
@@ -191,6 +193,25 @@ if __name__ == "__main__":
             if proceed_meas == 'y':
                 delay_preset = user_preset + '_' + CH_DELAYS[i] + 'ms'
                 measure_delay_xlr(file_path, CHANNELS[model], delay_preset)
+
+    ref_meas = input('Would you like to proceed with the AES3 input measurements? [y/n]: ')
+    assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
+
+    if ref_meas == 'y':
+        print('Please set the DUT preset to PURE')
+        user_preset = input('Please confirm the current DUT preset: ')
+        assert user_preset == 'PURE', 'Current user preset is not set to PURE'
+        for i in range(len(SAMPLE_RATES)):
+            print('Please set the sample rate to ' + str(SAMPLE_RATES[i]) + ' Hz')
+            proceed_meas = input('Confirm measurement [y/n]: ')
+            if proceed_meas == 'y':
+                volume_preset = user_preset + '_' + VOLUME[i] + 'dB'
+                measure_freq_res_xlr(file_path, CHANNELS[model], volume_preset)
+        print('Please set the DUT volume to 0 dB')
+        print('Please set the DUT preset to UNR')
+        user_preset = input('Please confirm the current DUT preset: ')
+        assert user_preset == 'UNR', 'Current user preset is not set to UNR'
+        measure_freq_res_xlr(file_path, CHANNELS[model], user_preset)
 
     ref_meas = input('Would you like to measure the frequency response of additional user presets? [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'

@@ -3,3 +3,6 @@
 3. Change reference measurements of the shelving filters.
 4. Investigate clipping in the WF channel when volume set to + 12dB. (It is possible that the Limiter is Active)
 5. Filter Stability Test
+6. Active Slot Test
+7. Idle Noise + Hum Noise Test
+8. Limiter Test + Review Knowledge HUB test signals
