@@ -1,2 +1,4 @@
 1. Modify get_freq_res_xlr for simultaneous WF, TW and MR measurement.
 2. Test S-Serie Limiters.
+3. Change reference measurements of the shelving filters.
+4. Investigate clipping in the WF channel when volume set to + 12dB.
