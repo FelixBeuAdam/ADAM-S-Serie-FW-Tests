@@ -1,7 +1,5 @@
 name: Audio Settings Tests
 
-on:
-
 jobs:
   test:
     runs-on: ${{ matrix.os }}
