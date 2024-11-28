@@ -1,0 +1,46 @@
+{
+"S2V":
+  {
+    "Model": "S2V",
+    "Device_Serial": "S-009679",
+    "Device_Name": "S2V009679",
+    "Band_WF": [20, 3000],
+    "Band_TW": [2000, 40000]
+  },
+"S3V":
+  {
+    "Model": "S3V",
+    "Device_Serial": "S-009631",
+    "Device_Name": "S3V009631",
+    "Band_WF": [20, 600],
+    "Band_MR": [500, 3000],
+    "Band_TW": [2000, 40000]
+  },
+"S3H":
+  {
+    "Model": "S3H",
+    "Device_Serial": "S-009604",
+    "Device_Name": "S3H009604",
+    "Band_WF": [20, 600],
+    "Band_MR": [500, 3000],
+    "Band_TW": [2000, 40000]
+  },
+"S5V":
+  {
+    "Model": "S5V",
+    "Device_Serial": "S-000000",
+    "Device_Name": "S5V000000",
+    "Band_WF": [20, 600],
+    "Band_MR": [500, 3000],
+    "Band_TW": [2000, 40000]
+  },
+"S5H":
+  {
+    "Model": "S5H",
+    "Device_Serial": "S-000000",
+    "Device_Name": "S5H000000",
+    "Band_WF": [20, 600],
+    "Band_MR": [500, 3000],
+    "Band_TW": [2000, 40000]
+  }
+}
