@@ -30,7 +30,7 @@ jobs:
           pip install -r requirements_dev.txt
           pip install -e .
 
-      - name: Run tests - discover
+      - name: Run tests - frequency_response_pure_wf
         run: |
           pytest -v tests/test_audio_settings.py::test_frequency_response_pure_wf
 
