@@ -5,6 +5,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import csv
 import helpers
+import pytest
 
 matplotlib.use('TkAgg')
 
@@ -34,6 +35,7 @@ PASS_PATH = os.path.join(LOG_PATH, MODEL) + '\\Pass\\'
 FAIL_PATH = os.path.join(LOG_PATH, MODEL) + '\\Fail\\'
 
 CH_IDX = [InputChannelIndex.Ch1, InputChannelIndex.Ch2, InputChannelIndex.Ch3]
+CHANNEL = ['WF', 'TW', 'MR']
 
 S_SERIE_MODELS = ['S2V', 'S3V', 'S3H', 'S5V', 'S5H']
 S_SERIE_PRESETS = ['PURE', 'UNR', 'USER 1', 'USER 2', 'USER 3', 'USER 4', 'USER 5']
@@ -47,11 +49,10 @@ CUSTOM_EQS = 6
 SAMPLE_RATES = ['44_100', '48_000', '88_200', '96_000', '176_400', '192_000']
 
 
+# @pytest.mark.test_key('AS-87')
+@pytest.mark.parametrize('dut_input', ['XLR', 'AESL', 'AESR'])
 class TestFrequencyResponsePURE:
-
-    # @pytest.mark.test_key('AS-87')
-    @pytest.mark.parametrize('channel', [('WF', 'TW')])
-    def test_frequency_response_pure_wf(self, channel):
+    def test_frequency_response_pure_wf(self, dut_input):
         """
             AS-87 Frequency Response Pure
             :return:
@@ -60,45 +61,65 @@ class TestFrequencyResponsePURE:
         ----------
         CHANNEL
         """
-        # CHANNEL = 'WF'
-        file_name = 'Ref_Freq_Res_PURE_0dB_' + channel + '_dBFS.csv'
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + CHANNEL[0] + '_dBFS.csv'
         reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
-        # measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
+        measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
 
         data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
                                                    start_frequency=20, end_frequency=8_000, tolerance=0.2))
         if data_within_limits:
-            pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_WF_PASS.png'
+            pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_WF_' + dut_input + '_PASS.png'
             helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
                                   title='AS-87: Frequency Response PURE - Woofer Channel')
         else:
-            fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_WF_FAIL.png'
+            fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_WF_' + dut_input + '_FAIL.png'
             helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
                                   title='AS-87: Frequency Response PURE - Woofer Channel')
 
         assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
-    # @pytest.mark.xray('AS-87')
-    def test_frequency_response_pure_tw(self):
+    def test_frequency_response_pure_tw(self, dut_input):
         """
         AS-87 Frequency Response Pure
         :return:
         """
-        CHANNEL = 'TW'
-        file_name = 'Ref_Freq_Res_PURE_0dB_' + CHANNEL + '_dBFS.csv'
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + CHANNEL[1] + '_dBFS.csv'
         reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
-        # measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+        measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
 
-        data_within_limits = (helpers.check_limits(data=self.measured_data['rms_level'], ref_data=reference_data,
+        data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
                                                    start_frequency=100, end_frequency=20_000, tolerance=0.2))
         if data_within_limits:
-            pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_PASS.png'
+            pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_' + dut_input + '_PASS.png'
             helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
                                   title='AS-87: Frequency Response PURE - Tweeter Channel')
         else:
-            fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_TW_FAIL.png'
+            fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_TW_' + dut_input + '_FAIL.png'
             helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
                                   title='AS-87: Frequency Response PURE - Tweeter Channel')
+
+        assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+    @pytest.mark.skipif(MODEL == 'S2V', reason='Selected model does not have a midrange channel')
+    def test_frequency_response_pure_mr(self, dut_input):
+        """
+        AS-87 Frequency Response Pure
+        :return:
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + CHANNEL[2] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[2])
+
+        data_within_limits = (helpers.check_limits(data=self.measured_data['rms_level'], ref_data=reference_data,
+                                                   start_frequency=300, end_frequency=6_000, tolerance=0.2))
+        if data_within_limits:
+            pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_MR_' + dut_input + '_PASS.png'
+            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                  title='AS-87: Frequency Response PURE - Midrange Channel')
+        else:
+            fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_MR_' + dut_input + '_FAIL.png'
+            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                  title='AS-87: Frequency Response PURE - Midrange Channel')
 
         assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
@@ -1129,23 +1150,27 @@ class TestAESSampleRate:
         assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
 
-#@pytest.mark.parametrize('channel', [('WF', 'TW')])
-def test_frequency_response_96_000_wf():
+@pytest.mark.parametrize('channel, ch_idx, start_frequency, end_frequency',
+                         [('WF', CH_IDX[0], 20, 8_000),
+                          ('TW', CH_IDX[1], 100, 20_000)
+                          ])
+def test_frequency_response_96_000_wf(channel, ch_idx, start_frequency, end_frequency):
     """
             AS-XX Frequency Response Pure
             :return:
         """
-    CHANNEL = 'WF'
-    file_name = 'Ref_Freq_Res_PURE_96_000_Hz_' + CHANNEL + '_dBFS.csv'
+    # CHANNEL = 'WF'
+    file_name = 'Ref_Freq_Res_PURE_96_000_Hz_' + channel + '_dBFS.csv'
     reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
     print('\nPlease open the AP sequence Frequency_Response_AES3.approjx')
     print('Please set the sample rate in the output configuration to ' + SAMPLE_RATES[3] + ' Hz and save the file')
     proceed_meas = input('Would you like to proceed with the measurement? [y/n]')
     if proceed_meas == 'y':
-        measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_AES3, channel=CH_IDX[0])
+        measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_AES3, channel=ch_idx)
 
         data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
-                                                   start_frequency=200, end_frequency=500, tolerance=2))
+                                                   start_frequency=start_frequency, end_frequency=end_frequency,
+                                                   tolerance=0.2))
         if data_within_limits:
             pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_96_000_WF_PASS.png'
             helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,

@@ -33,6 +33,7 @@ def save_freq_res(data: np.ndarray, ref_data: np.ndarray, fig_path: str, title='
     :param ref_data:
     :param title:
     """
+    plt.figure()
     plt.semilogx(ref_data[:, 0], ref_data[:, 1], label='Reference')
     plt.semilogx(data[:, 0], data[:, 1], '-.', label='Measured')
     plt.xlabel('Frequency [Hz]')
@@ -41,6 +42,7 @@ def save_freq_res(data: np.ndarray, ref_data: np.ndarray, fig_path: str, title='
     plt.legend()
     plt.grid()
     plt.savefig(fig_path)
+    plt.close()
 
 
 def load_csv(file_path: str, file_name: str):
