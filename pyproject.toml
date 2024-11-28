@@ -1,24 +1,24 @@
-[build-system]
-requires = ['setuptools>=75.0','wheel']
-build-backend = 'setuptools.build_meta'
+#[build-system]
+#requires = ['setuptools>=75.0','wheel']
+#build-backend = 'setuptools.build_meta'
 
-[project]
-name = 's_serie_regression_tests'
-description = 'Automated test repository for the S-Serie (WIP)'
-version = '1.0.0'
-authors = [
-    {name = 'Felix Beu', email = 'felix.beu@adam-audio.de'},
-    {name = 'Sebastián Higuera Quintero', email = 'sebastian.higuera@adam-audio.de'}
-]
-requires-python = '>=3.9'
+#[project]
+#name = 's_serie_regression_tests'
+#description = 'Automated test repository for the S-Serie (WIP)'
+#version = '1.0.0'
+#authors = [
+#    {name = 'Felix Beu', email = 'felix.beu@adam-audio.de'},
+#    {name = 'Sebastián Higuera Quintero', email = 'sebastian.higuera@adam-audio.de'}
+#]
+#requires-python = '>=3.9'
 
-[tool.setuptools.packages.find]
-where = ['src']
+#[tool.setuptools.packages.find]
+#where = ['src']
 
-[tool.pytest.ini_options]
-addopts = '--cov=test_audio_settings'
-testpaths = ['tests']
-junit_family = 'xunit2'
-junit_logging = 'all'
-junit_log_passing_tests = true
-python_files = ['test_*.py']
+#[tool.pytest.ini_options]
+#addopts = '--cov=test_audio_settings'
+#testpaths = ['tests']
+#junit_family = 'xunit2'
+#junit_logging = 'all'
+#junit_log_passing_tests = true
+#python_files = ['test_*.py']

@@ -103,8 +103,7 @@ def get_delay(project: str, channel: list[str]):
     return data
 
 
-def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float, end_frequency: float,
-                 tolerance: float):
+def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float, end_frequency: float, tolerance: float):
     """
     Compares the arrays of data and ref_data. Returns True, if the difference between the values in the second column
     are within the tolerance. Returns False if not and prints a graph with the data and upper/lower data limits as well
