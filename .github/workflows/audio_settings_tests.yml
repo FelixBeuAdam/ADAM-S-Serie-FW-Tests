@@ -5,9 +5,7 @@ on: workflow_dispatch
 jobs:
   test:
     runs-on: ${{ matrix.os }}
-    matrix:
-      os: windows-latest
-      python-version: '3.9'
+    matrix: { os: windows-latest, python-version: '3.9' }
 
     steps:
       - name: Checkout destination repository
