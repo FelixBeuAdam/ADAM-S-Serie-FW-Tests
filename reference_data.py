@@ -40,6 +40,7 @@ CH_DELAYS = ['0', '2.5', '5']
 VOLUME = ['-60', '-12', '-6', '0', '+6', '+12']
 CUSTOM_EQS = 6
 SAMPLE_RATES = ['44_100', '48_000', '88_200', '96_000', '176_400', '192_000']
+DEVICE_INPUT = ['Analog', 'AESL', 'AESR']
 
 
 def measure_freq_res(path: str, channel: list[str], preset: str, ap_sequence=AP_SEQ_FREQUENCY_RESPONSE_XLR):
@@ -102,9 +103,9 @@ def random_eq_settings(path: str, preset: str, eq_slots: int):
 
     for idx in range(eq_slots):
         if idx < eq_slots // 2:
-            eq = str(np.random.randint(20, 3_000))
+            eq = str(np.random.randint(20, 1_000))
         else:
-            eq = str(np.random.randint(3_000, 20_000))
+            eq = str(np.random.randint(1_000, 20_000))
         q = str(np.round(np.random.uniform(0.1, 20), 1))
         db = str(np.round(np.random.uniform(-12, 12), 1))
         eq_settings.append({'EQ': eq, 'Q': q, 'dB': db})
@@ -129,19 +130,28 @@ if __name__ == "__main__":
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
     if ref_meas == 'y':
         print('Please set the DUT preset to PURE')
-        user_preset = input('Please confirm the current DUT preset: ')
-        assert user_preset == 'PURE', 'Current user preset is not set to PURE'
-        for i in range(len(VOLUME)):
-            print('Please set the DUT volume to ' + VOLUME[i] + ' dB')
-            proceed_meas = input('Confirm measurement [y/n]: ')
-            if proceed_meas == 'y':
-                volume_preset = user_preset + '_' + VOLUME[i] + 'dB'
-                measure_freq_res(file_path, CHANNELS[model], volume_preset)
+        proceed_meas = input('Confirm measurement [y/n]: ')
+        if proceed_meas == 'y':
+            for inpt in range(len(DEVICE_INPUT)):
+                print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
+                dev_preset = input('Please confirm the current DUT input: ')
+                assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
+                for i in range(len(VOLUME)):
+                    print('Please set the DUT volume to ' + VOLUME[i] + ' dB')
+                    proceed_meas = input('Confirm measurement [y/n]: ')
+                    if proceed_meas == 'y':
+                        volume_preset = 'PURE_' + VOLUME[i] + 'dB_' + DEVICE_INPUT[inpt]
+                        measure_freq_res(file_path, CHANNELS[model], volume_preset)
         print('Please set the DUT volume to 0 dB')
         print('Please set the DUT preset to UNR')
-        user_preset = input('Please confirm the current DUT preset: ')
-        assert user_preset == 'UNR', 'Current user preset is not set to UNR'
-        measure_freq_res(file_path, CHANNELS[model], user_preset)
+        proceed_meas = input('Confirm measurement [y/n]: ')
+        if proceed_meas == 'y':
+            for inpt in range(len(DEVICE_INPUT)):
+                print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
+                dev_preset = input('Please confirm the current DUT input: ')
+                assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
+                unr_preset = 'UNR_0dB_' + DEVICE_INPUT[inpt]
+                measure_freq_res(file_path, CHANNELS[model], unr_preset)
 
     ref_meas = input('Would you like to proceed with the DUT shelving filter reference measurements [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
@@ -158,8 +168,12 @@ if __name__ == "__main__":
             print('Please set the DUT Lo-Shelf and Hi-Shelf gain to ' + SHELVING_FILTERS[i] + ' dB')
             proceed_meas = input('Confirm measurement [y/n]: ')
             if proceed_meas == 'y':
-                shelving_preset = user_preset + '_' + SHELVING_FILTERS[i] + 'dB'
-                measure_freq_res(file_path, CHANNELS[model], shelving_preset)
+                for inpt in range(len(DEVICE_INPUT)):
+                    print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
+                    dev_preset = input('Please confirm the current DUT input: ')
+                    assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
+                    shelving_preset = user_preset + '_' + DEVICE_INPUT[inpt] + '_' + SHELVING_FILTERS[i] + 'dB'
+                    measure_freq_res(file_path, CHANNELS[model], shelving_preset)
 
     ref_meas = input('Would you like to proceed with the DUT custom EQ reference measurements [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
@@ -178,7 +192,12 @@ if __name__ == "__main__":
               ' support arbitrary selection.')
         proceed_meas = input('Confirm measurement [y/n]: ')
         if proceed_meas == 'y':
-            measure_freq_res(file_path, CHANNELS[model], user_preset)
+            for inpt in range(len(DEVICE_INPUT)):
+                print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
+                dev_preset = input('Please confirm the current DUT input: ')
+                assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
+                eq_preset = user_preset + '_' + dev_preset
+                measure_freq_res(file_path, CHANNELS[model], user_preset)
 
     ref_meas = input('Would you like to proceed with the DUT delay reference measurements [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
@@ -192,8 +211,12 @@ if __name__ == "__main__":
             print('Please set the DUT delay to ' + CH_DELAYS[i] + ' ms')
             proceed_meas = input('Confirm measurement [y/n]: ')
             if proceed_meas == 'y':
-                delay_preset = user_preset + '_' + CH_DELAYS[i] + 'ms'
-                measure_delay_xlr(file_path, CHANNELS[model], delay_preset)
+                for inpt in range(len(DEVICE_INPUT)):
+                    print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
+                    dev_preset = input('Please confirm the current DUT input: ')
+                    assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
+                    delay_preset = user_preset + '_' + CH_DELAYS[i] + 'ms_' + DEVICE_INPUT[inpt]
+                    measure_delay_xlr(file_path, CHANNELS[model], delay_preset)
 
     ref_meas = input('Would you like to proceed with the AES3 input measurements? [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
@@ -202,15 +225,18 @@ if __name__ == "__main__":
         print('Please set the DUT preset to PURE')
         user_preset = input('Please confirm the current DUT preset: ')
         assert user_preset == 'PURE', 'Current user preset is not set to PURE'
-        print('Please open the AP sequence Frequency_Response_AES3.approjx')
         for i in range(len(SAMPLE_RATES)):
             print('Please set the sample rate in the output configuration to ' + SAMPLE_RATES[i]
                   + ' Hz and save the file')
             proceed_meas = input('Confirm measurement [y/n]: ')
             if proceed_meas == 'y':
-                sample_rate_preset = user_preset + '_' + SAMPLE_RATES[i] + '_Hz'
-                measure_freq_res(file_path, CHANNELS[model], sample_rate_preset,
-                                 ap_sequence=AP_SEQ_FREQUENCY_RESPONSE_AES3)
+                for inpt in range(1, len(DEVICE_INPUT)):
+                    print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
+                    dev_preset = input('Please confirm the current DUT input: ')
+                    assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
+                    sample_rate_preset = user_preset + '_' + SAMPLE_RATES[i] + 'Hz_' + DEVICE_INPUT[inpt]
+                    measure_freq_res(file_path, CHANNELS[model], sample_rate_preset,
+                                     ap_sequence=AP_SEQ_FREQUENCY_RESPONSE_XLR)
 
     ref_meas = input('Would you like to measure the frequency response of additional user presets? [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'

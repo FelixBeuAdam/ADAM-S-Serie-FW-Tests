@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="18" tests="54" time="1801.923" timestamp="2024-11-29T17:25:44.090185" hostname="ADAM-QA-01"><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[Analog--60dB]" time="62.612"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESL--60dB]" time="60.902"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESR--60dB]" time="59.988"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[Analog--12dB]" time="71.045"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESL--12dB]" time="49.806"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESR--12dB]" time="47.374"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[Analog--6dB]" time="57.023"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESL--6dB]" time="63.590"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESR--6dB]" time="49.436"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[Analog-0dB]" time="58.563"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESL-0dB]" time="80.668"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESR-0dB]" time="47.612"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[Analog-+6dB]" time="49.467"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESL-+6dB]" time="77.349"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESR-+6dB]" time="43.680"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[Analog-+12dB]" time="52.792"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESL-+12dB]" time="41.567"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_wf[AESR-+12dB]" time="38.941"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[Analog--60dB]" time="96.647"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESL--60dB]" time="36.867"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESR--60dB]" time="82.223"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[Analog--12dB]" time="71.300"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESL--12dB]" time="50.281"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESR--12dB]" time="40.344"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[Analog--6dB]" time="44.309"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESL--6dB]" time="40.294"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESR--6dB]" time="45.116"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[Analog-0dB]" time="47.706"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESL-0dB]" time="23.545"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESR-0dB]" time="27.178"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[Analog-+6dB]" time="42.760"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESL-+6dB]" time="24.472"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESR-+6dB]" time="33.028"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[Analog-+12dB]" time="33.896"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESL-+12dB]" time="24.013"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_tw[AESR-+12dB]" time="22.202"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[Analog--60dB]" time="0.001"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESL--60dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESR--60dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[Analog--12dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESL--12dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESR--12dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[Analog--6dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESL--6dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESR--6dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[Analog-0dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESL-0dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESR-0dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[Analog-+6dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESL-+6dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESR-+6dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[Analog-+12dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESL-+12dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestVolumeControl" name="test_volume_control_mr[AESR-+12dB]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:279: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

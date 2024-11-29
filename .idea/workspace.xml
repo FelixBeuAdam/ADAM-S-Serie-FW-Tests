@@ -5,52 +5,172 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_+12dB_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_+12dB_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_+12dB_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_+6dB_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_+6dB_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_+6dB_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-12dB_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-12dB_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-12dB_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-60dB_TW_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-60dB_TW_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-60dB_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-60dB_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-60dB_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-6dB_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-6dB_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_-6dB_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_0dB_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_0dB_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-291_Freq_Res_PURE_0dB_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-85_Freq_Res_UNR_TW_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-85_Freq_Res_UNR_TW_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-85_Freq_Res_UNR_TW_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-85_Freq_Res_UNR_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-85_Freq_Res_UNR_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-85_Freq_Res_UNR_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+12dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+12dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+12dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+12dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+12dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+12dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+6dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+6dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+6dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+6dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+6dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+6dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-12dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-12dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-12dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-12dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-12dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-12dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-60dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-60dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-60dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-60dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-60dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-60dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-6dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-6dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-6dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-6dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-6dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-6dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_0dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_0dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_0dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_0dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_0dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_0dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/01.firmware.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/02.tuning.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/03.serial.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/04.gainch1.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/04.gainch2.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/04.gainch3.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/04.gainch4.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/06.factory_reset.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Config/ADAM_Config_v0.4.0.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_DSP_Production_v0.0.5.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Flashing_Tool/ADAM_Flashing_tool_v0.3.3.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Flashing_Tool/MCP2210DLL-M-dotNet4.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Flashing_Tool/msvcp100.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Flashing_Tool/msvcr100.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Firmware/ADAM-DSP_v1.2.0.ldr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/macOS/ADAM_S-series_Remote.dmg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/ADAM_S-series_Remote.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/D3Dcompiler_47.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/Qt5Core.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/Qt5Gui.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/Qt5Svg.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/Qt5Widgets.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/iconengines/qsvgicon.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qgif.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qicns.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qico.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qjpeg.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qsvg.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qtga.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qtiff.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qwbmp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qwebp.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/libEGL.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/libGLESV2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/libgcc_s_dw2-1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/libstdc++-6.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/opengl32sw.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/platforms/qwindows.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_ca.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_cs.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_de.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_en.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_fi.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_fr.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_he.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_hu.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_it.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_ja.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_ko.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_lv.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_pl.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_ru.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_sk.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_uk.qm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_Production.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S2V.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S3H.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S3H.hex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S3H.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S3V.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S4H.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S4V.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S5H.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S5V.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_Production.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_Production.hex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S2V - Kopie.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S2V.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S2V.hex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S2V.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3H.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3H.hex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3H.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3V.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3V.hex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3V.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5H.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5H.hex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5H.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5V.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5V.hex" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5V.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/changelog.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-results/AS-85.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-results/AS-87.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" beforeDir="false" afterPath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Settings.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_TW_s.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_WF_s.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_2.5ms_TW_s.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_2.5ms_WF_s.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_5ms_TW_s.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_5ms_WF_s.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+12dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+12dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+6dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_+6dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-12dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-12dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-60dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-60dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-6dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_-6dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_176_400_Hz_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_176_400_Hz_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_192_000_Hz_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_192_000_Hz_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_44_100_Hz_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_44_100_Hz_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_48_000_Hz_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_48_000_Hz_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_88_200_Hz_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_88_200_Hz_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_96_000_Hz_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_96_000_Hz_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_UNR_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_+12dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_+12dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_+6dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_+6dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_-12dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_-12dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_-6dB_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_-6dB_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_TW_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_WF_dBFS.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,7 +259,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/ADAMQA/GitHub/ADAM-S-Serie-FW-Regression-Tests/tests",
+    "last_opened_file_path": "C:/Users/ADAMQA/GitHub/adam-aseries-testing",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
@@ -150,7 +270,29 @@
       <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\src\functions" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for regression_test.TestFrequencyResponsePURE.test_frequency_response_pure_wf">
+  <component name="RunManager" selected="Python.reference_data">
+    <configuration name="reference_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="S-Serie-FW-Tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reference_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for regression_test.TestAESSampleRate.test_frequency_response_192_000_tw" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="S-Serie-FW-Tests" />
       <option name="ENV_FILES" value="" />
@@ -163,21 +305,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;regression_test.TestAESSampleRate.test_frequency_response_192_000_tw&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for regression_test.TestAESSampleRate.test_frequency_response_192_000_wf" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="S-Serie-FW-Tests" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;regression_test.TestAESSampleRate.test_frequency_response_192_000_wf&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -234,11 +361,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.reference_data" />
         <item itemvalue="Python tests.pytest for regression_test.TestFrequencyResponsePURE.test_frequency_response_pure_wf" />
         <item itemvalue="Python tests.pytest for regression_test.test_frequency_response_96_000_wf" />
         <item itemvalue="Python tests.pytest for test_audio_settings.TestFrequencyResponsePURE.test_frequency_response_pure_wf" />
         <item itemvalue="Python tests.Python tests for regression_test.TestAESSampleRate.test_frequency_response_192_000_tw" />
-        <item itemvalue="Python tests.Python tests for regression_test.TestAESSampleRate.test_frequency_response_192_000_wf" />
       </list>
     </recent_temporary>
   </component>

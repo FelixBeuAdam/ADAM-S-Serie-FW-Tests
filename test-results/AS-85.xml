@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="3" tests="9" time="311.914" timestamp="2024-11-29T16:21:35.381117" hostname="ADAM-QA-01"><testcase classname="regression_test.TestFrequencyResponseUNR" name="test_frequency_response_unr_wf[Analog]" time="27.171"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponseUNR" name="test_frequency_response_unr_wf[AESL]" time="61.227"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponseUNR" name="test_frequency_response_unr_wf[AESR]" time="48.107"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponseUNR" name="test_frequency_response_unr_tw[Analog]" time="53.798"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponseUNR" name="test_frequency_response_unr_tw[AESL]" time="59.583"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponseUNR" name="test_frequency_response_unr_tw[AESR]" time="58.578"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponseUNR" name="test_frequency_response_unr_mr[Analog]" time="0.001"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:188: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponseUNR" name="test_frequency_response_unr_mr[AESL]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:188: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponseUNR" name="test_frequency_response_unr_mr[AESR]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:188: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

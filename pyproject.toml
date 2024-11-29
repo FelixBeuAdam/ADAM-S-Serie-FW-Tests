@@ -15,10 +15,10 @@
 #[tool.setuptools.packages.find]
 #where = ['src']
 
-#[tool.pytest.ini_options]
-#addopts = '--cov=test_audio_settings'
-#testpaths = ['tests']
-#junit_family = 'xunit2'
-#junit_logging = 'all'
-#junit_log_passing_tests = true
+[tool.pytest.ini_options]
+addopts = '--cov=test_audio_settings'
+testpaths = ['tests']
+junit_family = 'xunit2'
+junit_logging = 'all'
+junit_log_passing_tests = true
 #python_files = ['test_*.py']
