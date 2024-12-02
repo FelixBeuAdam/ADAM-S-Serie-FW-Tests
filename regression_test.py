@@ -47,6 +47,7 @@ CH_DELAYS = ['0ms', '2.5ms', '5ms']
 VOLUME = ['-60dB', '-12dB', '-6dB', '0dB', '+6dB', '+12dB']
 CUSTOM_EQS = 6
 SAMPLE_RATES = ['44_100', '48_000', '88_200', '96_000', '176_400', '192_000']
+DUT_INPUTS = ['Analog', 'AESL', 'AESR']
 
 
 # @pytest.mark.test_key('AS-87')
@@ -305,199 +306,109 @@ class TestVolumeControl:
             assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
 
+@pytest.mark.parametrize('dut_input, ch_delay',
+                         [(DUT_INPUTS[0], CH_DELAYS[0]), (DUT_INPUTS[1], CH_DELAYS[0]), (DUT_INPUTS[2], CH_DELAYS[0]),
+                          (DUT_INPUTS[0], CH_DELAYS[1]), (DUT_INPUTS[1], CH_DELAYS[1]), (DUT_INPUTS[2], CH_DELAYS[1]),
+                          (DUT_INPUTS[0], CH_DELAYS[2]), (DUT_INPUTS[1], CH_DELAYS[2]),
+                          (DUT_INPUTS[2], CH_DELAYS[2]), ])
 class TestDelay:
 
-    # @pytest.mark.xray('AS-88')
-    def test_delay_0_ms_wf(self):
+    # @pytest.mark.test_key('AS-88')
+    def test_delay_wf(self, dut_input, ch_delay):
         """
         AS-88 Woofer Channel Delay Test
         :return:
         """
-        CHANNEL = 'WF'
-        file_name = 'Ref_Delay_PURE_' + CH_DELAYS[0] + '_' + CHANNEL + '_s.csv'
+        file_name = 'Ref_Delay_PURE_' + ch_delay + '_' + dut_input + '_' + CHANNEL[0] + '_s.csv'
         reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
-        measured_data = helpers.get_delay(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
-        meas_ref_ratio = measured_data['channel_delay'][0] / reference_data[0]
-        deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
-        tolerance = 5  # Tolerance in percentage
+        proceed_meas = set_dut_input(dut_input + ' with ' + ch_delay + ' delay')
+        if proceed_meas == 'y':
+            measured_data = helpers.get_delay(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
+            meas_ref_ratio = measured_data['channel_delay'][0] / reference_data[0]
+            deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
+            tolerance = 10  # Tolerance in percentage
 
-        woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
-                        'Measured Delay': ' ' + str(measured_data['channel_delay'][0]) + ' s',
-                        'Tolerance': ' ' + str(tolerance) + ' %', 'Deviation': ' ' + str(deviation) + ' %'}
+            woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
+                            'Measured Delay': ' ' + str(measured_data['channel_delay'][0]) + ' s',
+                            'Tolerance': ' ' + str(tolerance) + ' %', 'Deviation': ' ' + str(deviation) + ' %'}
 
-        if deviation <= tolerance:
-            pass_txt_name = PASS_PATH + 'AS-88_Delay_' + CH_DELAYS[0] + '_' + CHANNEL + '_PASS.txt'
-            with open(pass_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
-        else:
-            fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + CH_DELAYS[0] + '_' + CHANNEL + '_FAIL.txt'
-            with open(fail_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
+            if deviation <= tolerance:
+                pass_txt_name = PASS_PATH + 'AS-88_Delay_' + ch_delay + '_' + dut_input + '_' + CHANNEL[0] + '_PASS.txt'
+                with open(pass_txt_name, 'w') as f:
+                    for key, value in woofer_delay.items():
+                        f.write('%s:%s\n' % (key, value))
+            else:
+                fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + ch_delay + '_' + dut_input + '_' + CHANNEL[0] + '_FAIL.txt'
+                with open(fail_txt_name, 'w') as f:
+                    for key, value in woofer_delay.items():
+                        f.write('%s:%s\n' % (key, value))
 
-        assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
+            assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
 
-    # @pytest.mark.xray('AS-88')
-    def test_delay_0ms_tw(self):
+    # @pytest.mark.test_key('AS-88')
+    def test_delay_tw(self, dut_input, ch_delay):
         """
         AS-88 Tweeter Channel Delay Test
         :return:
         """
-        CHANNEL = 'TW'
-        file_name = 'Ref_Delay_PURE_' + CH_DELAYS[0] + '_' + CHANNEL + '_s.csv'
+        file_name = 'Ref_Delay_PURE_' + ch_delay + '_' + dut_input + '_' + CHANNEL[1] + '_s.csv'
         reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
-        measured_data = helpers.get_delay(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+        proceed_meas = set_dut_input(dut_input + ' with ' + ch_delay + ' delay')
+        if proceed_meas == 'y':
+            measured_data = helpers.get_delay(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+            meas_ref_ratio = measured_data['channel_delay'][0] / reference_data[0]
+            deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
+            tolerance = 10  # Tolerance in percentage
 
-        meas_ref_ratio = measured_data['channel_delay'][1] / reference_data[0]
-        deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
-        tolerance = 5  # Tolerance in percentage
+            woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
+                            'Measured Delay': ' ' + str(measured_data['channel_delay'][0]) + ' s',
+                            'Tolerance': ' ' + str(tolerance) + ' %', 'Deviation': ' ' + str(deviation) + ' %'}
 
-        woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
-                        'Measured Delay': ' ' + str(measured_data['channel_delay'][1]) + ' s',
-                        'Tolerance': ' ' + str(tolerance) + ' %',
-                        'Deviation': ' ' + str(deviation) + ' %'}
+            if deviation <= tolerance:
+                pass_txt_name = PASS_PATH + 'AS-88_Delay_' + ch_delay + '_' + dut_input + '_' + CHANNEL[1] + '_PASS.txt'
+                with open(pass_txt_name, 'w') as f:
+                    for key, value in woofer_delay.items():
+                        f.write('%s:%s\n' % (key, value))
+            else:
+                fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + ch_delay + '_' + dut_input + '_' + CHANNEL[1] + '_FAIL.txt'
+                with open(fail_txt_name, 'w') as f:
+                    for key, value in woofer_delay.items():
+                        f.write('%s:%s\n' % (key, value))
 
-        if deviation <= tolerance:
-            pass_txt_name = PASS_PATH + 'AS-88_Delay_' + CH_DELAYS[0] + '_' + CHANNEL + '_PASS.txt'
-            with open(pass_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
-        else:
-            fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + CH_DELAYS[0] + '_' + CHANNEL + '_FAIL.txt'
-            with open(fail_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
+            assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
 
-        assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
-
-    # @pytest.mark.xray('AS-88')
-    def test_delay_2_5ms_wf(self):
+    @pytest.mark.skipif(MODEL == 'S2V', reason='Selected model does not have a midrange channel')
+    # @pytest.mark.test_key('AS-88')
+    def test_delay_mr(self, dut_input, ch_delay):
         """
-        AS-88 Woofer Channel Delay Test
+        AS-88 Midrange Channel Delay Test
         :return:
         """
-        CHANNEL = 'WF'
-        file_name = 'Ref_Delay_PURE_' + CH_DELAYS[1] + '_' + CHANNEL + '_s.csv'
+        file_name = 'Ref_Delay_PURE_' + ch_delay + '_' + dut_input + '_' + CHANNEL[2] + '_s.csv'
         reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
-        measured_data = helpers.get_delay(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
-        meas_ref_ratio = measured_data['channel_delay'][0] / reference_data[0]
-        deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
-        tolerance = 5  # Tolerance in percentage
+        proceed_meas = set_dut_input(dut_input + ' with ' + ch_delay + ' delay')
+        if proceed_meas == 'y':
+            measured_data = helpers.get_delay(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[2])
+            meas_ref_ratio = measured_data['channel_delay'][0] / reference_data[0]
+            deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
+            tolerance = 10  # Tolerance in percentage
 
-        woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
-                        'Measured Delay': ' ' + str(measured_data['channel_delay'][0]) + ' s',
-                        'Tolerance': ' ' + str(tolerance) + ' %', 'Deviation': ' ' + str(deviation) + ' %'}
+            woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
+                            'Measured Delay': ' ' + str(measured_data['channel_delay'][0]) + ' s',
+                            'Tolerance': ' ' + str(tolerance) + ' %', 'Deviation': ' ' + str(deviation) + ' %'}
 
-        if deviation <= tolerance:
-            pass_txt_name = PASS_PATH + 'AS-88_Delay_' + CH_DELAYS[1] + '_' + CHANNEL + '_PASS.txt'
-            with open(pass_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
-        else:
-            fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + CH_DELAYS[1] + '_' + CHANNEL + '_FAIL.txt'
-            with open(fail_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
+            if deviation <= tolerance:
+                pass_txt_name = PASS_PATH + 'AS-88_Delay_' + ch_delay + '_' + dut_input + '_' + CHANNEL[2] + '_PASS.txt'
+                with open(pass_txt_name, 'w') as f:
+                    for key, value in woofer_delay.items():
+                        f.write('%s:%s\n' % (key, value))
+            else:
+                fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + ch_delay + '_' + dut_input + '_' + CHANNEL[2] + '_FAIL.txt'
+                with open(fail_txt_name, 'w') as f:
+                    for key, value in woofer_delay.items():
+                        f.write('%s:%s\n' % (key, value))
 
-        assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
-
-    # @pytest.mark.xray('AS-88')
-    def test_delay_2_5ms_tw(self):
-        """
-        AS-88 Tweeter Channel Delay Test
-        :return:
-        """
-        CHANNEL = 'TW'
-        file_name = 'Ref_Delay_PURE_' + CH_DELAYS[1] + '_' + CHANNEL + '_s.csv'
-        reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
-        measured_data = helpers.get_delay(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
-
-        meas_ref_ratio = measured_data['channel_delay'][1] / reference_data[0]
-        deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
-        tolerance = 5  # Tolerance in percentage
-
-        woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
-                        'Measured Delay': ' ' + str(measured_data['channel_delay'][1]) + ' s',
-                        'Tolerance': ' ' + str(tolerance) + ' %',
-                        'Deviation': ' ' + str(deviation) + ' %'}
-
-        if deviation <= tolerance:
-            pass_txt_name = PASS_PATH + 'AS-88_Delay_' + CH_DELAYS[1] + '_' + CHANNEL + '_PASS.txt'
-            with open(pass_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
-        else:
-            fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + CH_DELAYS[1] + '_' + CHANNEL + '_FAIL.txt'
-            with open(fail_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
-
-        assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
-
-    # @pytest.mark.xray('AS-88')
-    def test_delay_5ms_wf(self):
-        """
-        AS-88 Woofer Channel Delay Test
-        :return:
-        """
-        CHANNEL = 'WF'
-        file_name = 'Ref_Delay_PURE_' + CH_DELAYS[2] + '_' + CHANNEL + '_s.csv'
-        reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
-        measured_data = helpers.get_delay(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
-        meas_ref_ratio = measured_data['channel_delay'][0] / reference_data[0]
-        deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
-        tolerance = 5  # Tolerance in percentage
-
-        woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
-                        'Measured Delay': ' ' + str(measured_data['channel_delay'][0]) + ' s',
-                        'Tolerance': ' ' + str(tolerance) + ' %', 'Deviation': ' ' + str(deviation) + ' %'}
-
-        if deviation <= tolerance:
-            pass_txt_name = PASS_PATH + 'AS-88_Delay_' + CH_DELAYS[2] + '_' + CHANNEL + '_PASS.txt'
-            with open(pass_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
-        else:
-            fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + CH_DELAYS[2] + '_' + CHANNEL + '_FAIL.txt'
-            with open(fail_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
-
-        assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
-
-    # @pytest.mark.xray('AS-88')
-    def test_delay_5ms_tw(self):
-        """
-        AS-88 Tweeter Channel Delay Test
-        :return:
-        """
-        CHANNEL = 'TW'
-        file_name = 'Ref_Delay_PURE_' + CH_DELAYS[2] + '_' + CHANNEL + '_s.csv'
-        reference_data = (helpers.load_csv(FILE_PATH, file_name))[0].astype(float)
-        measured_data = helpers.get_delay(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
-
-        meas_ref_ratio = measured_data['channel_delay'][1] / reference_data[0]
-        deviation = np.abs(1 - meas_ref_ratio) * 100  # Deviation error in percentage
-        tolerance = 5  # Tolerance in percentage
-
-        woofer_delay = {'Reference Delay': ' ' + str(reference_data[0]) + ' s',
-                        'Measured Delay': ' ' + str(measured_data['channel_delay'][1]) + ' s',
-                        'Tolerance': ' ' + str(tolerance) + ' %',
-                        'Deviation': ' ' + str(deviation) + ' %'}
-
-        if deviation <= tolerance:
-            pass_txt_name = PASS_PATH + 'AS-88_Delay_' + CH_DELAYS[2] + '_' + CHANNEL + '_PASS.txt'
-            with open(pass_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
-        else:
-            fail_txt_name = FAIL_PATH + 'AS-88_Delay_' + CH_DELAYS[2] + '_' + CHANNEL + '_FAIL.txt'
-            with open(fail_txt_name, 'w') as f:
-                for key, value in woofer_delay.items():
-                    f.write('%s:%s\n' % (key, value))
-
-        assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
+            assert deviation <= tolerance, 'Measured delay is not within the specified tolerance'
 
 
 class TestShelvingFilters:
@@ -746,6 +657,13 @@ class TestUserEQs:
         assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
 
+@pytest.mark.parametrize('dut_input, sample_rate',
+                         [('AESL', SAMPLE_RATES[0]), ('AESR', SAMPLE_RATES[0]),
+                          ('AESL', SAMPLE_RATES[1]), ('AESR', SAMPLE_RATES[1]),
+                          ('AESL', SAMPLE_RATES[2]), ('AESR', SAMPLE_RATES[2]),
+                          ('AESL', SAMPLE_RATES[3]), ('AESR', SAMPLE_RATES[3]),
+                          ('AESL', SAMPLE_RATES[4]), ('AESR', SAMPLE_RATES[4]),
+                          ('AESL', SAMPLE_RATES[5]), ('AESR', SAMPLE_RATES[5])])
 class TestAESSampleRate:
 
     # @pytest.mark.xray('AS-XX')

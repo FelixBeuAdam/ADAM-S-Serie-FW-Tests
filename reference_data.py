@@ -70,17 +70,22 @@ def measure_freq_res(path: str, channel: list[str], preset: str, ap_sequence=AP_
         np.savetxt(file, rms_level, delimiter=';')
 
 
-def measure_delay_xlr(path: str, channel: list[str], preset: str):
+def measure_delay(path: str, channel: list[str], preset: str, ap_sequence=AP_SEQ_FREQUENCY_RESPONSE_XLR):
     """
 
     :param preset:
     :param channel:
     :type path: object
+    :param ap_sequence:
+
+    Parameters
+    ----------
+    ap_sequence
     """
     # Initialize APx
     APx = APx500_Application()
     # Load project template
-    APx.OpenProject(AP_SEQ_FREQUENCY_RESPONSE_XLR)
+    APx.OpenProject(ap_sequence)
     # Run APx file
     APx.Sequence.Run()
     # Save curve to file
@@ -96,8 +101,12 @@ def random_eq_settings(path: str, preset: str, eq_slots: int):
     """
 
     :param path:
+    :param preset:
     :param eq_slots:
     :return:
+
+    Parameters
+    ----------
     """
     eq_settings = []
 
@@ -203,20 +212,19 @@ if __name__ == "__main__":
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'
 
     if ref_meas == 'y':
-        user_preset = input('Please enter the DUT preset: ')
-        assert user_preset in S_SERIE_PRESETS, 'Unrecognized S-Serie preset'
-        if ' ' in user_preset:
-            user_preset = user_preset.replace(' ', '_')
-        for i in range(len(CH_DELAYS)):
-            print('Please set the DUT delay to ' + CH_DELAYS[i] + ' ms')
-            proceed_meas = input('Confirm measurement [y/n]: ')
-            if proceed_meas == 'y':
-                for inpt in range(len(DEVICE_INPUT)):
-                    print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
-                    dev_preset = input('Please confirm the current DUT input: ')
-                    assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
-                    delay_preset = user_preset + '_' + CH_DELAYS[i] + 'ms_' + DEVICE_INPUT[inpt]
-                    measure_delay_xlr(file_path, CHANNELS[model], delay_preset)
+        print('Please set the DUT preset to PURE')
+        proceed_meas = input('Confirm measurement [y/n]: ')
+        if proceed_meas == 'y':
+            for i in range(len(CH_DELAYS)):
+                print('Please set the DUT delay to ' + CH_DELAYS[i] + ' ms')
+                proceed_meas = input('Confirm measurement [y/n]: ')
+                if proceed_meas == 'y':
+                    for inpt in range(len(DEVICE_INPUT)):
+                        print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
+                        dev_preset = input('Please confirm the current DUT input: ')
+                        assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
+                        delay_preset = 'PURE_' + CH_DELAYS[i] + 'ms_' + DEVICE_INPUT[inpt]
+                        measure_delay(file_path, CHANNELS[model], delay_preset)
 
     ref_meas = input('Would you like to proceed with the AES3 input measurements? [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'

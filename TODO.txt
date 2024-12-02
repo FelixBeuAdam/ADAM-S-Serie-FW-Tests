@@ -1,8 +1,7 @@
 1. Modify get_freq_res_xlr for simultaneous WF, TW and MR measurement.
 2. Test S-Serie Limiters.
-3. Change reference measurements of the shelving filters.
-4. Investigate clipping in the WF channel when volume set to + 12dB. (It is possible that the Limiter is Active)
 5. Filter Stability Test
-6. Active Slot Test
 7. Idle Noise + Hum Noise Test
 8. Limiter Test + Review Knowledge HUB test signals
+9. Investigate tuning changes when updating firmware. It is possible that the sample I had a different tuning.
+10. Investigate mismatch between AES3 and Analog Input
