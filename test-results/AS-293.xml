@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="24" time="1671.167" timestamp="2024-12-02T18:32:11.134214" hostname="ADAM-QA-01"><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[Analog--12dB]" time="65.643"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[AESL--12dB]" time="48.930"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[AESR--12dB]" time="33.255"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[Analog--6dB]" time="105.907"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[AESL--6dB]" time="40.130"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[AESR--6dB]" time="45.405"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[Analog-+6dB]" time="125.756"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[AESL-+6dB]" time="52.324"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[AESR-+6dB]" time="82.318"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[Analog-+12dB]" time="88.812"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[AESL-+12dB]" time="76.738"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_wf[AESR-+12dB]" time="78.306"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[Analog--12dB]" time="79.517"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[AESL--12dB]" time="82.538"><failure message="AssertionError: Measured frequency response is not within the specified tolerance&#10;assert False">self = &lt;regression_test.TestShelvingFilters object at 0x000002583CFD86A0&gt;, dut_input = 'AESL', filter_gain = '-12dB'
+
+    def test_lo_shelf_tw(self, dut_input, filter_gain):
+        """
+            AS-293
+            :return:
+        """
+        file_name = 'Ref_Freq_Res_USER_1_' + dut_input + '_' + filter_gain + '_' + CHANNEL[1] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input + ' and select Slot C')
+        if proceed_meas == 'y':
+            print('Please set the DUT Lo-Shelf cutoff frequency to ' + SHELVING_CUTOFF[0] + ' Hz and set the gain to '
+                  + filter_gain)
+            print('Please set the DUT Hi-Shelf cutoff frequency to ' + SHELVING_CUTOFF[1] + ' Hz and set the gain to '
+                  + filter_gain)
+            confirm_meas = input('Confirm measurement [y/n]: ')
+            if confirm_meas == 'y':
+                measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+                data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                           start_frequency=100, end_frequency=20_000, tolerance=0.4))
+                if data_within_limits:
+                    pass_fig_name = (PASS_PATH + 'AS-293_Freq_Res_Hi_Shelf_' + dut_input + '_' + filter_gain
+                                     + '_TW_PASS.png')
+                    helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data,
+                                          fig_path=pass_fig_name, title='AS-293: Frequency Response Hi-Shelf '
+                                                                        + dut_input + ' ' + filter_gain
+                                                                        + ' - Tweeter Channel')
+                else:
+                    fail_fig_name = (FAIL_PATH + 'AS-293_Freq_Res_Hi_Shelf_' + dut_input + '_' + filter_gain
+                                     + '_TW_FAIL.png')
+                    helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data,
+                                          fig_path=fail_fig_name, title='AS-293: Frequency Response Hi-Shelf '
+                                                                        + dut_input + ' ' + filter_gain
+                                                                        + ' - Tweeter Channel')
+    
+&gt;               assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+E               AssertionError: Measured frequency response is not within the specified tolerance
+E               assert False
+
+regression_test.py:599: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[AESR--12dB]" time="158.661"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[Analog--6dB]" time="73.820"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[AESL--6dB]" time="46.705"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[AESR--6dB]" time="71.125"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[Analog-+6dB]" time="44.323"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[AESL-+6dB]" time="46.047"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[AESR-+6dB]" time="68.634"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[Analog-+12dB]" time="61.636"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[AESL-+12dB]" time="52.857"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestShelvingFilters" name="test_lo_shelf_tw[AESR-+12dB]" time="42.126"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

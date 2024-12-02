@@ -1,0 +1,4 @@
+Reference Delay: 0.005276448567708333 s
+Measured Delay: 0.005266845703125 s
+Tolerance: 10 %
+Deviation: 0.1819948486203815 %

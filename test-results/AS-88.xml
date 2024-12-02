@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="9" tests="27" time="586.569" timestamp="2024-12-02T14:16:16.836828" hostname="ADAM-QA-01"><testcase classname="regression_test.TestDelay" name="test_delay_wf[Analog-0ms]" time="32.644"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_wf[AESL-0ms]" time="66.625"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_wf[AESR-0ms]" time="46.979"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_wf[Analog-2.5ms]" time="59.541"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_wf[AESL-2.5ms]" time="32.008"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_wf[AESR-2.5ms]" time="24.472"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_wf[Analog-5ms]" time="30.864"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_wf[AESL-5ms]" time="54.981"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_wf[AESR-5ms]" time="17.819"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_tw[Analog-0ms]" time="36.404"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_tw[AESL-0ms]" time="20.749"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_tw[AESR-0ms]" time="21.632"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_tw[Analog-2.5ms]" time="26.592"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_tw[AESL-2.5ms]" time="26.134"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_tw[AESR-2.5ms]" time="17.244"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_tw[Analog-5ms]" time="25.559"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_tw[AESL-5ms]" time="23.633"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_tw[AESR-5ms]" time="19.191"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_mr[Analog-0ms]" time="0.001"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:379: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_mr[AESL-0ms]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:379: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_mr[AESR-0ms]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:379: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_mr[Analog-2.5ms]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:379: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_mr[AESL-2.5ms]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:379: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_mr[AESR-2.5ms]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:379: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_mr[Analog-5ms]" time="0.001"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:379: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_mr[AESL-5ms]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:379: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestDelay" name="test_delay_mr[AESR-5ms]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:379: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

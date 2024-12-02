@@ -41,6 +41,7 @@ VOLUME = ['-60', '-12', '-6', '0', '+6', '+12']
 CUSTOM_EQS = 6
 SAMPLE_RATES = ['44_100', '48_000', '88_200', '96_000', '176_400', '192_000']
 DEVICE_INPUT = ['Analog', 'AESL', 'AESR']
+USER_PAGE = 3
 
 
 def measure_freq_res(path: str, channel: list[str], preset: str, ap_sequence=AP_SEQ_FREQUENCY_RESPONSE_XLR):
@@ -193,20 +194,21 @@ if __name__ == "__main__":
         assert user_preset == 'USER 2', 'Current user preset is not set to USER 2'
         if ' ' in user_preset:
             user_preset = user_preset.replace(' ', '_')
-        custom_eqs = random_eq_settings(path=file_path, preset=user_preset, eq_slots=CUSTOM_EQS)
-        print('Please set the DUT custom EQ with the following settings: ')
-        for i in range(CUSTOM_EQS):
-            print(custom_eqs[i])
-        print('NOTE: Please choose the closest available center frequency/Q value if the firmware version does not'
-              ' support arbitrary selection.')
-        proceed_meas = input('Confirm measurement [y/n]: ')
-        if proceed_meas == 'y':
-            for inpt in range(len(DEVICE_INPUT)):
-                print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
-                dev_preset = input('Please confirm the current DUT input: ')
-                assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
-                eq_preset = user_preset + '_' + dev_preset
-                measure_freq_res(file_path, CHANNELS[model], user_preset)
+        for pg in range(USER_PAGE):
+            custom_eqs = random_eq_settings(path=file_path, preset=user_preset+'_Pg'+str(pg+1), eq_slots=CUSTOM_EQS)
+            print('Please set the DUT custom EQ with the following settings: ')
+            for i in range(CUSTOM_EQS):
+                print(custom_eqs[i])
+            print('NOTE: Please choose the closest available center frequency/Q value if the firmware version does not'
+                  ' support arbitrary selection.')
+            proceed_meas = input('Confirm measurement [y/n]: ')
+            if proceed_meas == 'y':
+                for inpt in range(len(DEVICE_INPUT)):
+                    print('Please set the DUT input to ' + DEVICE_INPUT[inpt])
+                    dev_preset = input('Please confirm the current DUT input: ')
+                    assert dev_preset == DEVICE_INPUT[inpt], 'Current DUT input is not set to ' + DEVICE_INPUT[inpt]
+                    eq_preset = user_preset + '_' + dev_preset + '_Pg' + str(pg+1)
+                    measure_freq_res(file_path, CHANNELS[model], eq_preset)
 
     ref_meas = input('Would you like to proceed with the DUT delay reference measurements [y/n]: ')
     assert ref_meas in ['y', 'n'], 'Unrecognized input argument'

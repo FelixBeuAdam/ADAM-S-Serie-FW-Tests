@@ -5,47 +5,105 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_AESL_TW_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_AESL_WF_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_AESR_TW_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_AESR_WF_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_Analog_TW_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_Analog_WF_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_2.5ms_AESL_TW_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_2.5ms_AESL_WF_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_2.5ms_AESR_TW_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_2.5ms_AESR_WF_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_2.5ms_Analog_TW_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_2.5ms_Analog_WF_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_5ms_AESL_TW_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_5ms_AESL_WF_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_5ms_AESR_TW_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_5ms_AESR_WF_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_5ms_Analog_TW_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_5ms_Analog_WF_s.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_176_400Hz_AESL_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_176_400Hz_AESL_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_176_400Hz_AESR_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_176_400Hz_AESR_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_44_100Hz_AESL_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_44_100Hz_AESL_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_44_100Hz_AESR_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_44_100Hz_AESR_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_48_000Hz_AESL_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_48_000Hz_AESL_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_48_000Hz_AESR_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_48_000Hz_AESR_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_88_200Hz_AESL_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_88_200Hz_AESL_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_88_200Hz_AESR_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_88_200Hz_AESR_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_96_000Hz_AESL_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_96_000Hz_AESL_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_96_000Hz_AESR_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_96_000Hz_AESR_WF_dBFS.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_176_400Hz_AESL_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_176_400Hz_AESL_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_176_400Hz_AESR_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_176_400Hz_AESR_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_192_000Hz_AESL_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_192_000Hz_AESL_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_192_000Hz_AESR_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_192_000Hz_AESR_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_44_100Hz_AESL_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_44_100Hz_AESL_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_44_100Hz_AESR_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_44_100Hz_AESR_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_48_000Hz_AESL_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_48_000Hz_AESL_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_48_000Hz_AESR_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_48_000Hz_AESR_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_88_200Hz_AESL_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_88_200Hz_AESL_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_88_200Hz_AESR_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_88_200Hz_AESR_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_96_000Hz_AESL_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_96_000Hz_AESL_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_96_000Hz_AESR_TW_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-292_Freq_Res_PURE_96_000Hz_AESR_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-293_Freq_Res_Lo_Shelf_AESL_-12dB_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-293_Freq_Res_Lo_Shelf_AESL_-6dB_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-293_Freq_Res_Lo_Shelf_AESR_-12dB_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-293_Freq_Res_Lo_Shelf_Analog_-12dB_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-293_Freq_Res_Lo_Shelf_Analog_-6dB_WF_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_0ms_AESL_TW_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_0ms_AESL_WF_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_0ms_AESR_TW_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_0ms_AESR_WF_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_0ms_Analog_TW_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_0ms_Analog_WF_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_2.5ms_AESL_TW_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_2.5ms_AESL_WF_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_2.5ms_AESR_TW_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_2.5ms_AESR_WF_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_2.5ms_Analog_TW_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_2.5ms_Analog_WF_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_5ms_AESL_TW_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_5ms_AESL_WF_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_5ms_AESR_TW_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_5ms_AESR_WF_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_5ms_Analog_TW_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-88_Delay_5ms_Analog_WF_PASS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Pg1_Settings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Pg2_Settings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Pg3_Settings.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESL_+12dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESL_+12dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESL_+6dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESL_+6dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESL_-12dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESL_-12dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESL_-6dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESL_-6dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESR_+12dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESR_+12dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESR_+6dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESR_+6dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESR_-12dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESR_-12dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESR_-6dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_AESR_-6dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_Analog_+12dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_Analog_+12dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_Analog_+6dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_Analog_+6dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_Analog_-12dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_Analog_-12dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_Analog_-6dB_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_1_Analog_-6dB_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESL_Pg1_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESL_Pg1_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESL_Pg2_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESL_Pg2_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESL_Pg3_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESL_Pg3_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESR_Pg1_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESR_Pg1_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESR_Pg2_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESR_Pg2_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESR_Pg3_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_AESR_Pg3_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_Analog_Pg1_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_Analog_Pg1_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_Analog_Pg2_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_Analog_Pg2_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_Analog_Pg3_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_USER_2_Analog_Pg3_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-results/AS-292.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-results/AS-88.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" beforeDir="false" afterPath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Fail/AS-88_Delay_0ms_Analog_TW_FAIL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_Analog_TW_s.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_Analog_TW_s.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_Analog_WF_s.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/Ref_Delay_PURE_0ms_Analog_WF_s.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reference_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/reference_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_test.py" afterDir="false" />
@@ -147,8 +205,11 @@
       <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\Tests" />
       <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\src\functions" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\Log\S2V\Pass" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for regression_test.TestDelay.test_delay_0_ms_wf">
+  <component name="RunManager" selected="Python.reference_data">
     <configuration name="reference_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="S-Serie-FW-Tests" />
       <option name="ENV_FILES" value="" />
@@ -241,8 +302,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for regression_test.TestDelay.test_delay_0_ms_wf" />
         <item itemvalue="Python.reference_data" />
+        <item itemvalue="Python tests.pytest for regression_test.TestDelay.test_delay_0_ms_wf" />
         <item itemvalue="Python tests.pytest for regression_test.TestFrequencyResponsePURE.test_frequency_response_pure_wf" />
         <item itemvalue="Python tests.pytest for regression_test.test_frequency_response_96_000_wf" />
         <item itemvalue="Python tests.pytest for test_audio_settings.TestFrequencyResponsePURE.test_frequency_response_pure_wf" />
@@ -274,6 +335,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="tests">
         <watch expression="measured_data" />

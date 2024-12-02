@@ -5,3 +5,5 @@
 8. Limiter Test + Review Knowledge HUB test signals
 9. Investigate tuning changes when updating firmware. It is possible that the sample I had a different tuning.
 10. Investigate mismatch between AES3 and Analog Input
+11. Investigate high variation in DUT delay
+12. Sometimes global settings are not appplied.

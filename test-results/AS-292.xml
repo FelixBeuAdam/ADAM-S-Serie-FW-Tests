@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="12" tests="36" time="854.093" timestamp="2024-12-02T15:11:17.453275" hostname="ADAM-QA-01"><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESL-44_100Hz]" time="44.161"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESR-44_100Hz]" time="15.798"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESL-48_000Hz]" time="47.582"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESR-48_000Hz]" time="16.924"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESL-88_200Hz]" time="63.231"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESR-88_200Hz]" time="16.665"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESL-96_000Hz]" time="42.005"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESR-96_000Hz]" time="21.900"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESL-176_400Hz]" time="53.122"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESR-176_400Hz]" time="17.341"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESL-192_000Hz]" time="60.023"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_wf[AESR-192_000Hz]" time="32.652"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESL-44_100Hz]" time="40.859"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESR-44_100Hz]" time="19.068"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESL-48_000Hz]" time="45.444"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESR-48_000Hz]" time="18.586"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESL-88_200Hz]" time="53.394"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESR-88_200Hz]" time="24.435"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESL-96_000Hz]" time="62.667"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESR-96_000Hz]" time="26.146"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESL-176_400Hz]" time="44.738"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESR-176_400Hz]" time="21.822"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESL-192_000Hz]" time="41.572"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_tw[AESR-192_000Hz]" time="19.648"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESL-44_100Hz]" time="0.002"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESR-44_100Hz]" time="0.001"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESL-48_000Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESR-48_000Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESL-88_200Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESR-88_200Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESL-96_000Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESR-96_000Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESL-176_400Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESR-176_400Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESL-192_000Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestAESSampleRate" name="test_sample_rate_mr[AESR-192_000Hz]" time="0.000"><skipped type="pytest.skip" message="Selected model does not have a midrange channel">C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\regression_test.py:486: Selected model does not have a midrange channel</skipped><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>
