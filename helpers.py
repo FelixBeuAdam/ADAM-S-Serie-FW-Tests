@@ -58,6 +58,18 @@ def load_csv(file_path: str, file_name: str):
     return np.array(data)
 
 
+def print_csv(file_path: str, file_name: str):
+    """
+    Load .csv file and return it as a numpy array.
+    :return:
+    data (np.ndarray): data contained in the .csv file.
+    """
+    file = file_path + '\\' + file_name
+    with open(file) as f:
+        data = list(csv.reader(f, delimiter=";"))
+
+    print(data)
+
 def get_freq_res(project: str, channel: list[str]):
     """
     Measure the frequency response of the DUT and return as a np.ndarray.

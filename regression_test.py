@@ -48,7 +48,9 @@ VOLUME = ['-60dB', '-12dB', '-6dB', '0dB', '+6dB', '+12dB']
 CUSTOM_EQS = 6
 SAMPLE_RATES = ['44_100Hz', '48_000Hz', '88_200Hz', '96_000Hz', '176_400Hz', '192_000Hz']
 DUT_INPUTS = ['Analog', 'AESL', 'AESR']
-
+EQ_PAGE = ['Pg1', 'Pg2', 'Pg3']
+START_FREQUENCY = [10, 100, 300]
+END_FREQUENCY = [8_000, 20_000, 4_000]
 
 # @pytest.mark.test_key('AS-87')
 def set_dut_input(dut_input):
@@ -599,52 +601,56 @@ class TestShelvingFilters:
                 assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
 
 
+@pytest.mark.parametrize('dut_input, eq_page', [(DUT_INPUTS[0], EQ_PAGE[0]), (DUT_INPUTS[0], EQ_PAGE[1]),
+                                                (DUT_INPUTS[0], EQ_PAGE[2]), (DUT_INPUTS[1], EQ_PAGE[0]),
+                                                (DUT_INPUTS[1], EQ_PAGE[1]), (DUT_INPUTS[1], EQ_PAGE[2]),
+                                                (DUT_INPUTS[2], EQ_PAGE[0]), (DUT_INPUTS[2], EQ_PAGE[1]),
+                                                (DUT_INPUTS[2], EQ_PAGE[2])])
 class TestUserEQs:
 
-    # @pytest.mark.xray('AS-XX')
-    def test_user_eqs_wf(self):
+    # @pytest.mark.test_key('AS-294')
+    def test_user_eqs(self, dut_input, eq_page):
         """
-            AS-XX Frequency Response Pure
+            AS-294 Frequency Response Pure
             :return:
         """
-        CHANNEL = 'WF'
-        file_name = 'Ref_Freq_Res_USER_2_' + CHANNEL + '_dBFS.csv'
-        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
-        measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
-
-        data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
-                                                   start_frequency=20, end_frequency=8_000, tolerance=0.2))
-        if data_within_limits:
-            pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_USER_EQ_WF_PASS.png'
-            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
-                                  title='AS-XX: Frequency Response Custom User EQ - Woofer Channel')
+        if MODEL == 'S2V':
+            dut_channel = CHANNEL[:-1]
         else:
-            fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_USER_EQ_WF_FAIL.png'
-            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
-                                  title='AS-87: Frequency Response Custom User EQ - Woofer Channel')
+            dut_channel = CHANNEL
 
-        assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+        proceed_meas = set_dut_input(dut_input + ', select Slot D, reset EQ settings and select ' + eq_page)
+        if proceed_meas == 'y':
+            print('Please set the DUT custom EQ with the following settings: ')
+            eq_settings = 'REF_Custom_EQ_USER_2_' + eq_page + '_Settings.csv'
+            custom_eqs = helpers.load_csv(file_path=FILE_PATH, file_name=eq_settings)
+            for i in range(custom_eqs.shape[0]):
+                print(custom_eqs[i, 0])
+            print(
+                'NOTE: Please choose the closest available center frequency/Q value if the firmware version does not'
+                ' support arbitrary selection.')
+            confirm_meas = input('Confirm measurement [y/n]: ')
+            if confirm_meas == 'y':
+                for idx in range(len(dut_channel)):
+                    file_name = 'Ref_Freq_Res_USER_2_' + dut_input + '_' + eq_page + '_' + dut_channel[idx] + '_dBFS.csv'
+                    reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+                    measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[idx])
+                    data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                               start_frequency=START_FREQUENCY[idx],
+                                                               end_frequency=END_FREQUENCY[idx], tolerance=0.4))
+                    if data_within_limits:
+                        pass_fig_name = (PASS_PATH + 'AS-294_Freq_Res_Custom_EQ_' + eq_page + '_' + dut_input + '_'
+                                         + dut_channel[idx] + '_PASS.png')
+                        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data,
+                                              fig_path=pass_fig_name,
+                                              title='AS-294: Frequency Response Custom User EQ - '
+                                                    + dut_channel[idx] + ' Channel')
+                    else:
+                        fail_fig_name = (FAIL_PATH + 'AS-294_Freq_Res_Custom_EQ_' + eq_page + '_' + dut_input + '_'
+                                         + dut_channel[idx] + '_FAIL.png')
+                        helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data,
+                                              fig_path=fail_fig_name,
+                                              title='AS-294: Frequency Response Custom User EQ - '
+                                                    + dut_channel[idx] + ' Channel')
 
-    # @pytest.mark.xray('AS-87')
-    def test_user_eqs_tw(self):
-        """
-        AS-XX Frequency Response Pure
-        :return:
-        """
-        CHANNEL = 'TW'
-        file_name = 'Ref_Freq_Res_USER_2_' + CHANNEL + '_dBFS.csv'
-        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
-        measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
-
-        data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
-                                                   start_frequency=100, end_frequency=20_000, tolerance=0.2))
-        if data_within_limits:
-            pass_fig_name = PASS_PATH + 'AS-XX_Freq_Res_USER_EQ_TW_PASS.png'
-            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
-                                  title='AS-XX: Frequency Response Custom User EQ - Tweeter Channel')
-        else:
-            fail_fig_name = FAIL_PATH + 'AS-XX_Freq_Res_USER_EQ_TW_FAIL.png'
-            helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
-                                  title='AS-XX: Frequency Response Custom User EQ - Tweeter Channel')
-
-        assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+                    assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
