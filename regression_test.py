@@ -29,7 +29,7 @@ LOG_PATH = os.path.join(PROJECT_PATH, 'Log')
 AP_SEQ_FREQUENCY_RESPONSE_XLR = os.path.join(PROJECT_PATH, 'AP Sequences\\Frequency_Response_XLR.approjx')
 AP_SEQ_FREQUENCY_RESPONSE_AES3 = os.path.join(PROJECT_PATH, 'AP Sequences\\Frequency_Response_AES3.approjx')
 
-MODEL = 'S5V'
+MODEL = 'S2V'
 FILE_PATH = os.path.join(REF_DATA_PATH, MODEL)
 PASS_PATH = os.path.join(LOG_PATH, MODEL) + '\\Pass\\'
 FAIL_PATH = os.path.join(LOG_PATH, MODEL) + '\\Fail\\'
@@ -51,6 +51,7 @@ DUT_INPUTS = ['Analog', 'AESL', 'AESR']
 EQ_PAGE = ['Pg1', 'Pg2', 'Pg3']
 START_FREQUENCY = [10, 100, 300]
 END_FREQUENCY = [8_000, 20_000, 4_000]
+
 
 # @pytest.mark.test_key('AS-87')
 def set_dut_input(dut_input):

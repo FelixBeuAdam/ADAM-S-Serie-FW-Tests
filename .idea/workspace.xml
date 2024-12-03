@@ -5,22 +5,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AP Sequences/RMS Level.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-results/S5V_AS-87.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_AESL_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_AESR_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_AESL_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_AESR_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_test.py" afterDir="false" />
     </list>
