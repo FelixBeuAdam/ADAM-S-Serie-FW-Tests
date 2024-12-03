@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="6" skipped="0" tests="9" time="507.551" timestamp="2024-12-03T16:57:49.389915" hostname="ADAM-QA-01"><testcase classname="regression_test.TestFrequencyResponsePURE" name="test_frequency_response_pure_wf[Analog]" time="17.250"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponsePURE" name="test_frequency_response_pure_wf[AESL]" time="91.646"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponsePURE" name="test_frequency_response_pure_wf[AESR]" time="36.934"><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponsePURE" name="test_frequency_response_pure_tw[Analog]" time="45.234"><failure message="AssertionError: Measured frequency response is not within the specified tolerance&#10;assert False">self = &lt;regression_test.TestFrequencyResponsePURE object at 0x000001F3333AFEE0&gt;, dut_input = 'Analog'
+
+    def test_frequency_response_pure_tw(self, dut_input):
+        """
+        AS-87 Frequency Response Pure
+        :return:
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + dut_input + '_' + CHANNEL[1] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input)
+        if proceed_meas == 'y':
+            measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=1_000, end_frequency=20_000, tolerance=0.4))
+            if data_within_limits:
+                pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_' + dut_input + '_PASS.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                      title='AS-87: Frequency Response PURE - Tweeter Channel')
+            else:
+                fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_TW_' + dut_input + '_FAIL.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                      title='AS-87: Frequency Response PURE - Tweeter Channel')
+    
+&gt;           assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+E           AssertionError: Measured frequency response is not within the specified tolerance
+E           assert False
+
+regression_test.py:113: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponsePURE" name="test_frequency_response_pure_tw[AESL]" time="63.416"><failure message="AssertionError: Measured frequency response is not within the specified tolerance&#10;assert False">self = &lt;regression_test.TestFrequencyResponsePURE object at 0x000001F3333AF790&gt;, dut_input = 'AESL'
+
+    def test_frequency_response_pure_tw(self, dut_input):
+        """
+        AS-87 Frequency Response Pure
+        :return:
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + dut_input + '_' + CHANNEL[1] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input)
+        if proceed_meas == 'y':
+            measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=1_000, end_frequency=20_000, tolerance=0.4))
+            if data_within_limits:
+                pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_' + dut_input + '_PASS.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                      title='AS-87: Frequency Response PURE - Tweeter Channel')
+            else:
+                fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_TW_' + dut_input + '_FAIL.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                      title='AS-87: Frequency Response PURE - Tweeter Channel')
+    
+&gt;           assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+E           AssertionError: Measured frequency response is not within the specified tolerance
+E           assert False
+
+regression_test.py:113: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponsePURE" name="test_frequency_response_pure_tw[AESR]" time="56.456"><failure message="AssertionError: Measured frequency response is not within the specified tolerance&#10;assert False">self = &lt;regression_test.TestFrequencyResponsePURE object at 0x000001F3333AF640&gt;, dut_input = 'AESR'
+
+    def test_frequency_response_pure_tw(self, dut_input):
+        """
+        AS-87 Frequency Response Pure
+        :return:
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + dut_input + '_' + CHANNEL[1] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input)
+        if proceed_meas == 'y':
+            measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=1_000, end_frequency=20_000, tolerance=0.4))
+            if data_within_limits:
+                pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_' + dut_input + '_PASS.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                      title='AS-87: Frequency Response PURE - Tweeter Channel')
+            else:
+                fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_TW_' + dut_input + '_FAIL.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                      title='AS-87: Frequency Response PURE - Tweeter Channel')
+    
+&gt;           assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+E           AssertionError: Measured frequency response is not within the specified tolerance
+E           assert False
+
+regression_test.py:113: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponsePURE" name="test_frequency_response_pure_mr[Analog]" time="60.133"><failure message="AssertionError: Measured frequency response is not within the specified tolerance&#10;assert False">self = &lt;regression_test.TestFrequencyResponsePURE object at 0x000001F3333AF100&gt;, dut_input = 'Analog'
+
+    @pytest.mark.skipif(MODEL == 'S2V', reason='Selected model does not have a midrange channel')
+    def test_frequency_response_pure_mr(self, dut_input):
+        """
+        AS-87 Frequency Response Pure
+        :return:
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + dut_input + '_' + CHANNEL[2] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input)
+        if proceed_meas == 'y':
+            measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[2])
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=100, end_frequency=7_000, tolerance=0.2))
+            if data_within_limits:
+                pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_MR_' + dut_input + '_PASS.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                      title='AS-87: Frequency Response PURE - Midrange Channel')
+            else:
+                fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_MR_' + dut_input + '_FAIL.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                      title='AS-87: Frequency Response PURE - Midrange Channel')
+    
+&gt;           assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+E           AssertionError: Measured frequency response is not within the specified tolerance
+E           assert False
+
+regression_test.py:137: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponsePURE" name="test_frequency_response_pure_mr[AESL]" time="89.075"><failure message="AssertionError: Measured frequency response is not within the specified tolerance&#10;assert False">self = &lt;regression_test.TestFrequencyResponsePURE object at 0x000001F3334F4190&gt;, dut_input = 'AESL'
+
+    @pytest.mark.skipif(MODEL == 'S2V', reason='Selected model does not have a midrange channel')
+    def test_frequency_response_pure_mr(self, dut_input):
+        """
+        AS-87 Frequency Response Pure
+        :return:
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + dut_input + '_' + CHANNEL[2] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input)
+        if proceed_meas == 'y':
+            measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[2])
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=100, end_frequency=7_000, tolerance=0.2))
+            if data_within_limits:
+                pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_MR_' + dut_input + '_PASS.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                      title='AS-87: Frequency Response PURE - Midrange Channel')
+            else:
+                fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_MR_' + dut_input + '_FAIL.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                      title='AS-87: Frequency Response PURE - Midrange Channel')
+    
+&gt;           assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+E           AssertionError: Measured frequency response is not within the specified tolerance
+E           assert False
+
+regression_test.py:137: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase><testcase classname="regression_test.TestFrequencyResponsePURE" name="test_frequency_response_pure_mr[AESR]" time="43.670"><failure message="AssertionError: Measured frequency response is not within the specified tolerance&#10;assert False">self = &lt;regression_test.TestFrequencyResponsePURE object at 0x000001F3334F4220&gt;, dut_input = 'AESR'
+
+    @pytest.mark.skipif(MODEL == 'S2V', reason='Selected model does not have a midrange channel')
+    def test_frequency_response_pure_mr(self, dut_input):
+        """
+        AS-87 Frequency Response Pure
+        :return:
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + dut_input + '_' + CHANNEL[2] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input)
+        if proceed_meas == 'y':
+            measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[2])
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=100, end_frequency=7_000, tolerance=0.2))
+            if data_within_limits:
+                pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_MR_' + dut_input + '_PASS.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                      title='AS-87: Frequency Response PURE - Midrange Channel')
+            else:
+                fail_fig_name = FAIL_PATH + 'AS-87_Freq_Res_PURE_MR_' + dut_input + '_FAIL.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                      title='AS-87: Frequency Response PURE - Midrange Channel')
+    
+&gt;           assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+E           AssertionError: Measured frequency response is not within the specified tolerance
+E           assert False
+
+regression_test.py:137: AssertionError</failure><system-out>--------------------------------- Captured Log ---------------------------------
+
+--------------------------------- Captured Out ---------------------------------
+
+</system-out><system-err>--------------------------------- Captured Err ---------------------------------
+
+</system-err></testcase></testsuite></testsuites>

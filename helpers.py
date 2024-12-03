@@ -25,7 +25,7 @@ REF_DATA_PATH = os.path.join(FILE_PATH, 'Reference Data')
 AP_SEQ_FREQUENCY_RESPONSE_XLR = os.path.join(FILE_PATH, 'AP Sequences\\Frequency_Response_XLR.approjx')
 
 
-def save_freq_res(data: np.ndarray, ref_data: np.ndarray, fig_path: str, title='Frequency Response'):
+def save_freq_res(data: np.ndarray, ref_data: np.ndarray, fig_path: str, title='Frequency Response', channel='All'):
     """
 
     :param fig_path:
@@ -36,6 +36,15 @@ def save_freq_res(data: np.ndarray, ref_data: np.ndarray, fig_path: str, title='
     plt.figure()
     plt.semilogx(ref_data[:, 0], ref_data[:, 1], label='Reference')
     plt.semilogx(data[:, 0], data[:, 1], '-.', label='Measured')
+    if channel == 'WF':
+        plt.xlim(10, 400)
+        plt.ylim(-40, -10)
+    elif channel == 'TW':
+        plt.xlim(3_000, 40_000)
+        plt.ylim(-40, -20)
+    elif channel == 'MR':
+        plt.xlim(200, 5_000)
+        plt.ylim(-40, -10)
     plt.xlabel('Frequency [Hz]')
     plt.ylabel('RMS Level [dBFS]')
     plt.title(title)
@@ -69,6 +78,7 @@ def print_csv(file_path: str, file_name: str):
         data = list(csv.reader(f, delimiter=";"))
 
     print(data)
+
 
 def get_freq_res(project: str, channel: list[str]):
     """
@@ -117,7 +127,8 @@ def get_delay(project: str, channel: list[str]):
     return data
 
 
-def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float, end_frequency: float, tolerance: float):
+def check_limits(data: np.ndarray, ref_data: np.ndarray, start_frequency: float, end_frequency: float,
+                 tolerance: float):
     """
     Compares the arrays of data and ref_data. Returns True, if the difference between the values in the second column
     are within the tolerance. Returns False if not and prints a graph with the data and upper/lower data limits as well

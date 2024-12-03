@@ -29,7 +29,7 @@ LOG_PATH = os.path.join(PROJECT_PATH, 'Log')
 AP_SEQ_FREQUENCY_RESPONSE_XLR = os.path.join(PROJECT_PATH, 'AP Sequences\\Frequency_Response_XLR.approjx')
 AP_SEQ_FREQUENCY_RESPONSE_AES3 = os.path.join(PROJECT_PATH, 'AP Sequences\\Frequency_Response_AES3.approjx')
 
-MODEL = 'S2V'
+MODEL = 'S5V'
 FILE_PATH = os.path.join(REF_DATA_PATH, MODEL)
 PASS_PATH = os.path.join(LOG_PATH, MODEL) + '\\Pass\\'
 FAIL_PATH = os.path.join(LOG_PATH, MODEL) + '\\Fail\\'
@@ -77,7 +77,7 @@ class TestFrequencyResponsePURE:
         if proceed_meas == 'y':
             measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
             data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
-                                                       start_frequency=20, end_frequency=8_000, tolerance=0.4))
+                                                       start_frequency=20, end_frequency=1_000, tolerance=0.4))
             if data_within_limits:
                 pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_WF_' + dut_input + '_PASS.png'
                 helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
@@ -100,7 +100,7 @@ class TestFrequencyResponsePURE:
         if proceed_meas == 'y':
             measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
             data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
-                                                       start_frequency=100, end_frequency=20_000, tolerance=0.4))
+                                                       start_frequency=1_000, end_frequency=20_000, tolerance=0.4))
             if data_within_limits:
                 pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_TW_' + dut_input + '_PASS.png'
                 helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
@@ -123,8 +123,8 @@ class TestFrequencyResponsePURE:
         proceed_meas = set_dut_input(dut_input)
         if proceed_meas == 'y':
             measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[2])
-            data_within_limits = (helpers.check_limits(data=self.measured_data['rms_level'], ref_data=reference_data,
-                                                       start_frequency=300, end_frequency=6_000, tolerance=0.2))
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=100, end_frequency=7_000, tolerance=0.2))
             if data_within_limits:
                 pass_fig_name = PASS_PATH + 'AS-87_Freq_Res_PURE_MR_' + dut_input + '_PASS.png'
                 helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
@@ -654,3 +654,81 @@ class TestUserEQs:
                                                     + dut_channel[idx] + ' Channel')
 
                     assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+
+@pytest.mark.parametrize('dut_input', ['Analog', 'AESL', 'AESR'])
+class TestTuningValidation:
+
+    def test_tuning_validation_wf(self, dut_input):
+        """
+            AS-295 Frequency Response Pure
+            :return:
+
+        Parameters
+        ----------
+        CHANNEL
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + dut_input + '_' + CHANNEL[0] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input)
+        if proceed_meas == 'y':
+            measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[0])
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=20, end_frequency=1_000, tolerance=0.4))
+            if data_within_limits:
+                pass_fig_name = PASS_PATH + 'AS-295_Freq_Res_PURE_WF_' + dut_input + '_PASS.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                      title='AS-295: Frequency Response PURE - Woofer Channel', channel=CHANNEL[0])
+            else:
+                fail_fig_name = FAIL_PATH + 'AS-295_Freq_Res_PURE_WF_' + dut_input + '_FAIL.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                      title='AS-295: Frequency Response PURE - Woofer Channel', channel=CHANNEL[0])
+
+            assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+    def test_tuning_validation_tw(self, dut_input):
+        """
+        AS-295 Frequency Response Pure
+        :return:
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + dut_input + '_' + CHANNEL[1] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input)
+        if proceed_meas == 'y':
+            measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[1])
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=1_000, end_frequency=20_000, tolerance=0.4))
+            if data_within_limits:
+                pass_fig_name = PASS_PATH + 'AS-295_Freq_Res_PURE_TW_' + dut_input + '_PASS.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                      title='AS-295: Frequency Response PURE - Tweeter Channel', channel=CHANNEL[1])
+            else:
+                fail_fig_name = FAIL_PATH + 'AS-295_Freq_Res_PURE_TW_' + dut_input + '_FAIL.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                      title='AS-295: Frequency Response PURE - Tweeter Channel', channel=CHANNEL[1])
+
+            assert data_within_limits, 'Measured frequency response is not within the specified tolerance'
+
+    @pytest.mark.skipif(MODEL == 'S2V', reason='Selected model does not have a midrange channel')
+    def test_tuning_validation_mr(self, dut_input):
+        """
+        AS-295 Frequency Response Pure
+        :return:
+        """
+        file_name = 'Ref_Freq_Res_PURE_0dB_' + dut_input + '_' + CHANNEL[2] + '_dBFS.csv'
+        reference_data = (helpers.load_csv(FILE_PATH, file_name)).astype(float)
+        proceed_meas = set_dut_input(dut_input)
+        if proceed_meas == 'y':
+            measured_data = helpers.get_freq_res(project=AP_SEQ_FREQUENCY_RESPONSE_XLR, channel=CH_IDX[2])
+            data_within_limits = (helpers.check_limits(data=measured_data['rms_level'], ref_data=reference_data,
+                                                       start_frequency=100, end_frequency=7_000, tolerance=0.2))
+            if data_within_limits:
+                pass_fig_name = PASS_PATH + 'AS-295_Freq_Res_PURE_MR_' + dut_input + '_PASS.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=pass_fig_name,
+                                      title='AS-295: Frequency Response PURE - Midrange Channel', channel=CHANNEL[2])
+            else:
+                fail_fig_name = FAIL_PATH + 'AS-295_Freq_Res_PURE_MR_' + dut_input + '_FAIL.png'
+                helpers.save_freq_res(data=measured_data['rms_level'], ref_data=reference_data, fig_path=fail_fig_name,
+                                      title='AS-295: Frequency Response PURE - Midrange Channel', channel=CHANNEL[2])
+
+            assert data_within_limits, 'Measured frequency response is not within the specified tolerance'

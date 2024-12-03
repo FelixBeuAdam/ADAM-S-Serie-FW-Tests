@@ -5,10 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AP Sequences/RMS Level.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-results/S5V_AS-87.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Pg1_Settings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Pg1_Settings.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Pg2_Settings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Pg2_Settings.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Pg3_Settings.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S2V/REF_Custom_EQ_USER_2_Pg3_Settings.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-87_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_test.py" afterDir="false" />
     </list>
@@ -100,7 +112,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/ADAMQA/GitHub/adam-aseries-testing",
+    "last_opened_file_path": "C:/Users/ADAMQA/GitHub/ADAM-aseries-cli-python-tools",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
@@ -114,7 +126,7 @@
       <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\Log\S2V\Pass" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for regression_test.TestUserEQs.test_user_eqs">
+  <component name="RunManager" selected="Python.reference_data">
     <configuration name="reference_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="S-Serie-FW-Tests" />
       <option name="ENV_FILES" value="" />
@@ -207,8 +219,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for regression_test.TestUserEQs.test_user_eqs" />
         <item itemvalue="Python.reference_data" />
+        <item itemvalue="Python tests.pytest for regression_test.TestUserEQs.test_user_eqs" />
         <item itemvalue="Python tests.pytest for regression_test.TestDelay.test_delay_0_ms_wf" />
         <item itemvalue="Python tests.pytest for regression_test.TestFrequencyResponsePURE.test_frequency_response_pure_wf" />
         <item itemvalue="Python tests.pytest for regression_test.test_frequency_response_96_000_wf" />
