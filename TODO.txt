@@ -1,14 +1,10 @@
-1. Modify get_freq_res_xlr for simultaneous WF, TW and MR measurement.
-2. Test S-Serie Limiters.
-5. Filter Stability Test / High Gain Protection.
-6. Test Tuning Validation.
-7. Idle Noise + Hum Noise Test
-8. Limiter Test + Review Knowledge HUB test signals
-9. Investigate tuning changes when updating firmware. It is possible that the sample I had a different tuning.
-10. Investigate mismatch between AES3 and Analog Input
-11. Investigate high variation in DUT delay
-12. Sometimes global settings are not appplied.
-13. Test AES3 Out.
-14. Test Tweeter LED turns on when the limiter is active.
-15. Test Reset to Defaults.
-16. Test Firmware Update.
+1. Limiter Test + Review Knowledge HUB test signals
+2. Test Tweeter LED turns on when the limiter is active.
+3. Filter Stability Test / High Gain Protection.
+4. Idle Noise + Hum Noise Test
+5. Test AES3 Out.
+6. Test Reset to Defaults.
+7. Test Firmware Update.
+8. Modify get_freq_res_xlr for simultaneous WF, TW and MR measurement.
+9. Investigate mismatch between AES3 and Analog Input
+10. Investigate high variation in DUT delay

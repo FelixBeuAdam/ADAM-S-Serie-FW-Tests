@@ -5,76 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_AESL_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_AESR_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_AESL_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_AESR_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AP Sequences/Stepped_Level_Response.approjx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3H/Fail/AS-295_Freq_Res_PURE_WF_Analog_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S3V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Log/S5H/Fail/AS-295_Freq_Res_PURE_WF_Analog_FAIL.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" beforeDir="false" afterPath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,72 +56,72 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_176_400_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_176_400_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_192_000_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_192_000_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_44_100_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_44_100_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_48_000_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_48_000_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_96_000_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_96_000_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestUserEQs.test_user_eqs_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestUserEQs.test_user_eqs_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_0db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_0db_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_minus_12db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_minus_12db_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_minus_6db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_minus_6db_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_12db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_12db_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_6db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_6db_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_0_ms_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_0ms_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_2_5_ms_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_2_5ms_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_5ms_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_5ms_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_pure_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_pure_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_delay_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_frequency_response_pure_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_frequency_response_pure_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_frequency_response_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_frequency_response_unr_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_frequency_response_unr_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_frequency_response_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_hi_shelf_minus_12db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_hi_shelf_minus_6db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_hi_shelf_plus_12db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_hi_shelf_plus_6db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_lo_shelf_minus_12db_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_lo_shelf_minus_6db_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_lo_shelf_plus_12db_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_lo_shelf_plus_6db_wf.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_volume_control_minus_60db_tw.executor": "Run",
-    "Python tests.Python tests for regression_tests.test_volume_control_minus_60db_wf.executor": "Run",
-    "Python tests.pytest for regression_test.TestDelay.test_delay_0_ms_wf.executor": "Run",
-    "Python tests.pytest for regression_test.TestFrequencyResponsePURE.test_frequency_response_pure_wf.executor": "Debug",
-    "Python tests.pytest for regression_test.TestUserEQs.test_user_eqs.executor": "Debug",
-    "Python tests.pytest for regression_test.test_frequency_response_96_000_wf.executor": "Debug",
-    "Python tests.pytest for regression_tests.TestFrequencyResponsePURE.test_frequency_response_pure_wf.executor": "Run",
-    "Python tests.pytest for test_audio_settings.TestFrequencyResponsePURE.test_frequency_response_pure_wf.executor": "Run",
-    "Python.AFT-533.executor": "Run",
-    "Python.reference_data.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/ADAMQA/GitHub/ADAM-aseries-cli-python-tools",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_176_400_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_176_400_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_192_000_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_192_000_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_44_100_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_44_100_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_48_000_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_48_000_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_96_000_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestAESSampleRate.test_frequency_response_96_000_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestUserEQs.test_user_eqs_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestUserEQs.test_user_eqs_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_0db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_0db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_minus_12db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_minus_12db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_minus_6db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_minus_6db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_12db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_12db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_6db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.TestVolumeControl.test_volume_control_plus_6db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_0_ms_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_0ms_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_2_5_ms_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_2_5ms_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_5ms_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_5ms_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_pure_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_pure_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_delay_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_frequency_response_pure_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_frequency_response_pure_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_frequency_response_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_frequency_response_unr_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_frequency_response_unr_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_frequency_response_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_hi_shelf_minus_12db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_hi_shelf_minus_6db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_hi_shelf_plus_12db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_hi_shelf_plus_6db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_lo_shelf_minus_12db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_lo_shelf_minus_6db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_lo_shelf_plus_12db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_lo_shelf_plus_6db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_volume_control_minus_60db_tw.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for regression_tests.test_volume_control_minus_60db_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for regression_test.TestDelay.test_delay_0_ms_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for regression_test.TestFrequencyResponsePURE.test_frequency_response_pure_wf.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.pytest for regression_test.TestUserEQs.test_user_eqs.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.pytest for regression_test.test_frequency_response_96_000_wf.executor&quot;: &quot;Debug&quot;,
+    &quot;Python tests.pytest for regression_tests.TestFrequencyResponsePURE.test_frequency_response_pure_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.pytest for test_audio_settings.TestFrequencyResponsePURE.test_frequency_response_pure_wf.executor&quot;: &quot;Run&quot;,
+    &quot;Python.AFT-533.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reference_data.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADAMQA/GitHub/ADAM-aseries-cli-python-tools&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\tests" />
