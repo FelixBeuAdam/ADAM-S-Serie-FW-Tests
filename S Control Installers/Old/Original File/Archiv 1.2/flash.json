@@ -1,0 +1,14 @@
+{
+	"version": "1.2.0",
+	"format": 0,
+	"firmware": "ADAM-DSP.ldr",
+	"production_tuning":"Tuning_Production.hex",
+	"tuning":
+	{
+		"S2V":"Tuning_S2V.hex",
+		"S3H":"Tuning_S3H.hex",
+		"S3V":"Tuning_S3V.hex",
+		"S5H":"Tuning_S5H.hex",
+		"S5V":"Tuning_S5V.hex"
+	}
+}

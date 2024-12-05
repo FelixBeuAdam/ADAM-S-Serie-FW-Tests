@@ -8,3 +8,4 @@
 8. Modify get_freq_res_xlr for simultaneous WF, TW and MR measurement.
 9. Investigate mismatch between AES3 and Analog Input
 10. Investigate high variation in DUT delay
+11. When changing SN tunings are not changed correctly.

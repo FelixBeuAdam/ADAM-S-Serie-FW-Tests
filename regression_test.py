@@ -20,6 +20,7 @@ clr.AddReference(r'C:\\Program Files\\Audio Precision\\APx500 9.0\\API\\AudioPre
 clr.AddReference(r'C:\\Program Files\\Audio Precision\\APx500 9.0\\API\\AudioPrecision.API.dll')
 
 # noinspection PyUnresolvedReferences
+
 from AudioPrecision.API import *
 
 # get project path from main entry file

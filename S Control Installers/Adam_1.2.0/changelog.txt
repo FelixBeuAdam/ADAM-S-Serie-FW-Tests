@@ -1,0 +1,282 @@
+# Change Log
+All notable changes to this project will be documented in this file.
+
+############################################################################################
+## [1.2.0] - 2017-10-02
+### Fixed
+ADAM Audio in menu now capitalized
+
+### Added
+
+### Changed
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.2.0
+- ADAM_Flashing_Tool_0.3.3
+- ADAM_Config_0.4.0
+- ADAM_DSP_Production_v0.0.5
+- ADAM_S-Series Remote 0.1
+
+############################################################################################
+## [1.1.1] - 2017-09-19
+### Fixed
+- Better rotary button behaviour
+
+### Added
+
+### Changed
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.1.1
+- ADAM_Flashing_Tool_0.3.3
+- ADAM_Config_0.4.0
+- ADAM_DSP_Production_v0.0.5
+- ADAM_S-Series Remote 0.1
+
+############################################################################################
+## [1.1.0] - 2017-05-22
+### Fixed
+
+### Added
+
+### Changed
+Updated version number to 1.1.0
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.1.0
+- ADAM_Flashing_Tool_0.3.3
+- ADAM_Config_0.4.0
+- ADAM_DSP_Production_v0.0.5
+- ADAM_S-Series Remote 0.1
+
+############################################################################################
+## [1.0.9] - 2017-04-12
+### Fixed
+
+### Added
+
+### Changed
+Integrated new Tuning
+Updated version number to match
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.0.9
+- ADAM_Flashing_Tool_0.3.3
+- ADAM_Config_0.4.0
+- ADAM_DSP_Production_v0.0.5
+- ADAM_S-Series Remote 0.1
+
+############################################################################################
+## [1.0.8] - 2017-02-20
+### Fixed
+(34) Level chage does not apply to the output (restart is needed).
+
+### Added
+
+### Changed
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.0.8
+- ADAM_Flashing_Tool_0.3.3
+- ADAM_Config_0.4.0
+- ADAM_DSP_Production_v0.0.5
+- ADAM_S-Series Remote 0.1
+
+
+############################################################################################
+## [1.0.7] - 2017-02-11
+### Fixed
+(33) Compensating for inverted analog input by inverting in the input selector.
+
+### Added
+(17) ADAM_S-Series Remote 0.1 released
+
+### Changed
+
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.0.7
+- ADAM_Flashing_Tool_0.3.3
+- ADAM_Config_0.4.0
+- ADAM_DSP_Production_v0.0.5
+- ADAM_S-Series Remote 0.1
+
+
+############################################################################################
+## [1.0.6] - 2017-02-10
+### Fixed
+(32) Initializing the ISR before configuring all user Data Biquads resulted in no output when
+     SPORT was reacting relatively slowly on some DSPs.
+
+### Added
+
+### Changed
+() DSP starts up displaying the currently active preset.
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.0.6
+- ADAM_Flashing_Tool_0.3.3
+- ADAM_Config_0.4.0
+- ADAM_DSP_Production_v0.0.5
+
+############################################################################################
+## [1.0.5] - 2017-02-07
+### Fixed
+(26) no preset was active after flashing firmware/tunings. Now removing userData leads to 
+     a soft factory reset which selects Pure as preset.
+
+### Added
+(27) Button on the Production Software to trigger a hard factory reset, which selects UNR as
+     preset.
+(28) Added visual indications for both Short and Long Click, as well as flashing.
+
+### Changed
+() Flash banking has been removed as very error prone with external software utilities
+(29) Production order has been changed such that procedure starts with serial number
+     programming.
+(31) The 'S2' Loudspeaker Type has been changed to 'S2V' in Config, Flashing_Tool, Firmware,
+     Production and Remote. 'S2' will now be rejected as a Loudspeaker tuning type
+() Tuning data revision has been incremented to '4', purposely enforcing incompatibility
+   with previous versions.
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.0.5
+- ADAM_Flashing_Tool_0.3.3
+- ADAM_Config_0.4.0
+- ADAM_DSP_Production_v0.0.5
+
+
+############################################################################################
+## [1.0.4] - 2017-01-27
+### Fixed
+()   Production tool channel 4 slider handle is invisible at the top setting
+
+### Added
+
+### Changed
+()   Firmware build changed from Debug to Release.
+(25) Expand metadata erasing utility (wipes serial number and calibration) to also wipe the
+     user data, essentially blanking all memory except DSP and tuning
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.0.4
+- ADAM_Flashing_Tool_0.3.1
+- ADAM_Config_0.3.5
+- ADAM_Production_Tool 0.0.4
+
+
+############################################################################################
+## [1.0.3] - 2017-01-26
+### Fixed
+(24) Frequency settings typo in EQs: 40-54-50 Hz should be 40-45-50 Hz
+
+### Added
+
+### Changed
+(23) Add 6 dB gain in DSP code when signal comes from the analogue input. This is to
+     compensate for new input IC without affecting AES3 signal path
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.0.3
+- ADAM_Flashing_Tool_0.3.0
+- ADAM_Config_0.3.5
+- ADAM_Production_Tool 0.0.3
+
+
+############################################################################################
+## [1.0.2] - 2017-01-20
+### Fixed
+(19) Shelving filter code for first order filters checked and corrected
+(22) Shelving and high/lowpass display corrected in ADAM_Config
+
+### Added
+(13) Added a 'zero all' button for the channel calibration
+
+### Changed
+(15) Calibration range reduced to +/- 3dB
+(18) Factory reset activates preset UNR
+
+### Known bugs
+(20) Higher order shelving needs checked; remcomend setting Q=0 to force first order
+     behaviour for now.
+
+### Components
+- ADAM_DSP_v1.0.2
+- ADAM_Flashing_Tool_0.3.0
+- ADAM_Config_0.3.5
+- ADAM_Production_Tool 0.0.3
+
+############################################################################################
+## [1.0.1] - 2017-01-12
+### Fixed
+(1): Channel 1 calibration (slider 1 was acting on CH 2)
+(2): ADAM presets should not be editable
+(3): Clipper not reacting to lowered compressor knee. Compressor is a misnomer, is just a
+soft limiter. Clipper now goes red when limiter reduces gain by 1 dB
+(4): Change gain increment from 0.5dB down to 0.1 dB
+(5): Add actual dB indication to calibration field in production tool. Value is indicated in
+a box and may alternatively also be entered here. The slider will follow the value.
+
+### Added
+(8): +1 Button on the serial number writer for ease of use.
+
+### Changed
+(6): Removed 'production' loudspeaker type from serial number writer. It is not a valid type.
+
+### Known bugs
+n/a
+
+### Components
+- ADAM_DSP_v1.0.1
+- ADAM_Flashing_Tool_0.3.0
+- ADAM_Production_Tool 0.0.2
+
+############################################################################################
+## [1.0.0] - 2017-01-03
+### Added
+- First release
+
+### Components
+- ADAM_DSP_v1.0.0
+- ADAM_Flashing_Tool_0.3.0
+- ADAM_Production_Tool 0.0.1

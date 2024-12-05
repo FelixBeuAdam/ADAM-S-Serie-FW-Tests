@@ -37,13 +37,13 @@ def save_freq_res(data: np.ndarray, ref_data: np.ndarray, fig_path: str, title='
     plt.semilogx(ref_data[:, 0], ref_data[:, 1], label='Reference')
     plt.semilogx(data[:, 0], data[:, 1], '-.', label='Measured')
     if channel == 'WF':
-        plt.xlim(10, 3_000)
+        plt.xlim(10, 600)
         plt.ylim(-40, -10)
     elif channel == 'TW':
         plt.xlim(1_500, 40_000)
         plt.ylim(-40, -10)
     elif channel == 'MR':
-        plt.xlim(200, 5_000)
+        plt.xlim(100, 6_000)
         plt.ylim(-40, -10)
     plt.xlabel('Frequency [Hz]')
     plt.ylabel('RMS Level [dBFS]')

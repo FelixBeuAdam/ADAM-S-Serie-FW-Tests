@@ -5,29 +5,192 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="710c89ba-eba8-4f5f-8def-f3ba79febb41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AP Sequences/Stepped_Level_Response.approjx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3H/Fail/AS-295_Freq_Res_PURE_WF_Analog_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S3V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Log/S5H/Fail/AS-295_Freq_Res_PURE_WF_Analog_FAIL.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" beforeDir="false" afterPath="$PROJECT_DIR$/AP Sequences/Frequency_Response_XLR.approjx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" afterPath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S2V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Fail/AS-295_Freq_Res_PURE_WF_Analog_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3H/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S3V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Fail/AS-295_Freq_Res_PURE_WF_Analog_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5H/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_AESL_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_AESR_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_MR_Analog_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_AESL_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_AESR_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Fail/AS-295_Freq_Res_PURE_TW_Analog_FAIL.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_MR_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_TW_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_AESL_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_AESR_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Log/S5V/Pass/AS-295_Freq_Res_PURE_WF_Analog_PASS.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S2V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3H/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S3V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5H/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESL_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESL_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESL_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESR_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESR_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_AESR_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_MR_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_TW_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reference Data/S5V/Ref_Freq_Res_PURE_0dB_Analog_WF_dBFS.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/01.firmware.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/02.tuning.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/03.serial.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/04.gainch1.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/04.gainch2.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/04.gainch3.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/04.gainch4.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/06.factory_reset.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Config/ADAM_Config_v0.4.0.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_DSP_Production_v0.0.5.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Flashing_Tool/ADAM_Flashing_tool_v0.3.3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Flashing_Tool/MCP2210DLL-M-dotNet4.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Flashing_Tool/msvcp100.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/ADAM_Flashing_Tool/msvcr100.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Firmware/ADAM-DSP_v1.2.0.ldr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/macOS/ADAM_S-series_Remote.dmg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/ADAM_S-series_Remote.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/D3Dcompiler_47.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/Qt5Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/Qt5Gui.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/Qt5Svg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/Qt5Widgets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/iconengines/qsvgicon.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qgif.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qicns.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qico.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qjpeg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qsvg.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qtga.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qtiff.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qwbmp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/imageformats/qwebp.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/libEGL.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/libGLESV2.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/libgcc_s_dw2-1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/libstdc++-6.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/opengl32sw.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/platforms/qwindows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_ca.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_cs.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_de.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_en.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_fi.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_fr.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_he.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_hu.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_it.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_ja.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_ko.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_lv.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_pl.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_ru.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_sk.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Remote/windows/translations/qt_uk.qm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_Production.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S2V.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S3H.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S3H.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S3H.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S3V.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S4H.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S4V.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S5H.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S5V.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Template_S6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_Production.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_Production.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S2V - Kopie.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S2V.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S2V.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S2V.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3H.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3H.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3H.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3V.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3V.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S3V.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5H.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5H.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5H.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5V.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5V.hex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/Tunings/Tuning_S5V.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Adam_DSP_package_v1.2.0/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/S Control Installers/Tuning_S5V_Roman" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TODO.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/regression_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/regression_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,12 +281,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADAMQA/GitHub/ADAM-aseries-cli-python-tools&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ADAMQA/GitHub/ADAM-S-Serie-FW-Regression-Tests/S Control Installers&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\S Control Installers" />
       <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\tests" />
       <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\Tests" />
       <recent name="C:\Users\ADAMQA\GitHub\ADAM-S-Serie-FW-Regression-Tests\src\functions" />
